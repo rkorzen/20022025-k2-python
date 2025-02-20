@@ -2,6 +2,22 @@
 
 Szkolenie uzupelniajace z Pythona
 
+1. Sprawdzenie aktualnego stanu wiedzy
+2. Podstawy pracy z VIM i GIT
+3. Wprowadzenie do markdown
+
+| A | B | 
+|---|---|
+| 1 | 2 |
+
+
+$y=x^2$
+
+4. Omowienie typów liczbowych
+
+    [typy liczbowe](type_liczbowe_w_pythonie.md)
+
+
 ## Podstawy pracy z vim
 
 Otwarcie pliku do edycji:
