@@ -37,14 +37,21 @@ po kazdym poleceniu enter
 ## Podstawy pracy z git
 
 
-   git init
+Tworzenie nowego repo lokalnie:
 
-   git remote add origin <url>
+    git init
 
-   git remote -v
+Powiązanie ze zdalnym repozytorium:
 
+    git remote add origin <url>
 
-   git clone <url>
+Sprawdzenie z jakimi zdalnymi repo jesteśmy powiązani
+
+    git remote -v
+
+Sklonowanie istniejącego repozytorium:
+
+    git clone <url>
 
    
 ### praca lokalna
