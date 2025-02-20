@@ -1,5 +1,7 @@
 # Kurs - Python 2 bootcamp
 
+Szkolenie uzupelniajace z Pythona
+
 ## Podstawy pracy z vim
 
 Otwarcie pliku do edycji:
