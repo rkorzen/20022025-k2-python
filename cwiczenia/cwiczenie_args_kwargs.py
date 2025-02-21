@@ -24,3 +24,20 @@ Pomocne:
 
 
 """
+def replace(*args, **kwargs):
+    text = "\n".join(args)
+
+    for k, v in kwargs.items():
+        text = text.replace(f"${k}", str(v))
+
+    return text
+
+
+if __name__ == "__main__":
+
+    assert replace() == ""
+    assert replace("") == ""
+    assert replace("A", "B") == "A\nB"
+    assert replace("A $a", "B", a=10) == "A 10\nB"
+    assert replace("A $a", "B", "$g", a=10, g="Ala ma kota") == "A 10\nB\nAla ma kota"
+
