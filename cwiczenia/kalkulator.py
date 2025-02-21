@@ -24,34 +24,43 @@ for func in lista:
     func(1, 2)
 """
 import logging
+from functools import wraps
 
-
-logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', filename="logs.log")
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', filename="logs.log")
 logger = logging.getLogger(__name__)
 
 
+def log_calls(func):
 
+    wraps(func)
+    def wrapper(*args, **kwargs):
+        logger.debug(f"Wywołano funkcję {func.__name__} z arg %s %s" % (args, kwargs) )
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper
+
+@log_calls
 def add(a, b):
-    logger.debug("Wywołano funkcję add z arg %s %s" % (a, b) )
     return a + b
 
+@log_calls
 def sub(a, b):
-    logger.debug("Wywołano funkcję sub z arg %s %s" % (a, b))
     return a - b
 
+@log_calls
 def mul(a, b):
-    logger.debug("Wywołano funkcję mul z arg %s %s" % (a, b))
     return a * b
 
+@log_calls
 def div(a, b):
-    logger.debug("Wywołano funkcję div z arg %s %s" % (a, b))
     if b == 0:
         logger.warning("Wywołano funkcję div dzielnikiem 0! Sprawdz dane!!" )
         raise ValueError("Dzielnik nie może być 0")
     return a / b
 
+@log_calls
 def power(a, b):
-    logger.debug("Wywołano funkcję div z arg %s %s" % (a, b))
     return a ** b
 
 def get_data():

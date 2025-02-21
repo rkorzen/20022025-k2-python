@@ -1,1 +1,3 @@
 2025-02-21 13:54:57,281 - __main__ - WARNING - Wywołano funkcję div dzielnikiem 0! Sprawdz dane!!
+2025-02-21 14:57:17,051 - __main__ - DEBUG - Pobrano dane + 10.0 20.0
+2025-02-21 14:57:17,051 - __main__ - DEBUG - Wywołano funkcję add z arg (10.0, 20.0) {}

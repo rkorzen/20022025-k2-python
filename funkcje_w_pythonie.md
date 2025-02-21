@@ -71,3 +71,26 @@ closure = outer_function("Hello ALX")
 closure()
 
 ```
+
+### Dekoratory
+
+```python
+
+def mydecorator(func):
+    
+    def wrapper():
+        # kod wykonany przed funkcja oryginalma
+        r = func()
+        # kod wykonany po funkcji oryginalnej
+        return r
+        
+    return wrapper
+
+def dowolna_funkcja():
+    print("jestem dowolna funkcja")
+
+dowolna_funkcja = mydecorator(dowolna_funkcja)  
+
+
+
+```
