@@ -47,5 +47,37 @@ print(el)
 y
 
 
-
 """
+
+class Stack:
+    def __init__(self):
+        self._stack = []
+
+    def append(self, x):
+        print(f"Dodano element: {x}")
+        self._stack.append(x)
+
+    def extend(self, xs: list):
+        for element in xs:
+            self.append(element)
+
+
+    def pop(self):
+        x = self._stack.pop()
+        print(f"Usunięto element: {x}")
+        return x
+
+
+
+data = [1, 2, 3]
+stack = Stack()
+
+stack.extend(data)
+
+
+
+
+
+
+
+
