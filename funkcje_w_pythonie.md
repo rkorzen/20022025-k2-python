@@ -52,3 +52,22 @@ funkcja_z_argumentami_pozycyjnymi(1, 2, 3)
 ###  mozna wymusic stosowanie nazw lub zakazc stosowania nazw
 
 patrz przyklady/funkcje.py
+
+
+## Domknięcie - clojure
+
+Domknięciem nazywamy funkcję zagnieżdzoną, która pamięta swoje otoczenie.
+
+```python
+
+def outer_function(msg):
+    
+    def inner_function():
+        print(f"Zapamiętana wiadomość to: {msg}")
+    
+    return inner_function
+
+closure = outer_function("Hello ALX")
+closure()
+
+```

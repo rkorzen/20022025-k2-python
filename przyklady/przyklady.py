@@ -43,3 +43,5 @@ def add(a, b, /, *args, to_float=False, **kwargs):
     return result
 
 print(add(1, 2, 3, 4, 5, to_float=True, pretty_print=True ))
+
+print(add(1, 2, a=1, b=2))
