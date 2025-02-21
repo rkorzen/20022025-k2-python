@@ -13,4 +13,28 @@ print(order_id()) # order_1
 print(order_id()) # order_2
 print(order_id()) # order_3
 
+przydatne rzeczy:
+nonlocal
+global
+
+
+
 """
+
+x = 1
+
+def foo():
+    y = 10
+
+    def inner():
+        nonlocal y
+        y = 12
+
+    inner()
+    print("y", y)
+    global x
+    x += 1
+
+foo()
+
+print(x)
