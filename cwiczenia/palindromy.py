@@ -21,7 +21,6 @@ is_palindrome("Kobyła !ma, mały- bok") -> True
 print(dir(str))
 
 
-
 def is_palindrome(tekst):
     tekst = tekst.lower()
     choosen = [s for s in tekst if s.isalnum()]

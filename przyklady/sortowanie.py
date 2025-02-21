@@ -1,5 +1,3 @@
-
-
 lista = (5, 1, 4, 3, 2)
 
 # print(lista.sort())
@@ -12,7 +10,9 @@ dane = [(5, "a"), (1, "e"), (2, "c"), (3, "b"), (4, "d")]
 
 print(sorted(dane))
 
-def second(x): return x[1]
+
+def second(x):
+    return x[1]
 
 
 print(sorted(dane, key=second))

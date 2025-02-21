@@ -1,13 +1,11 @@
-
-
 napis = "zażółć gęślą jaźń"
-print(napis.encode("UTF-8"))# unicode
+print(napis.encode("UTF-8"))  # unicode
 
 print("ż".encode("UTF-8-SIG"))
 print("ż".encode("CP1250"))
 
 
-data = b'\xef\xbb\xbf\xc5\xbc'
+data = b"\xef\xbb\xbf\xc5\xbc"
 
 print(data.decode("UTF-8-SIG"))
 

@@ -3,9 +3,11 @@ Wykorzystując moduł collections napisz kod który zliczy ilość wystąpień k
 "Ala ma kota"
 
 """
+
 from collections import Counter, defaultdict
 
 text = "Ala ma kota"
+
 
 def rozwiazanie_1(text):
     zliczenia = {}
@@ -17,12 +19,14 @@ def rozwiazanie_1(text):
             zliczenia[znak] = 1
     return zliczenia
 
+
 def rozwiazanie_2(text):
     zliczenia = {}
 
     for znak in text:
         zliczenia[znak] = zliczenia.get(znak, 0) + 1
     return zliczenia
+
 
 def rozwiazanie_3(text):
     zliczenia = {}
@@ -32,14 +36,17 @@ def rozwiazanie_3(text):
 
     return zliczenia
 
+
 def rozwiazanie_4(text):
     zliczenia = defaultdict(int)
     for znak in text:
         zliczenia[znak] += 1
     return zliczenia
 
+
 def rozwiazanie_5(text):
     return Counter(text)
+
 
 def rozwiazanie_6(text):
     zliczenia = {}

@@ -15,7 +15,7 @@ print(dane2, type(dane2))
 print(json.dumps(dane2))
 
 data_b: bytes = b'{"user": "rkorzen", "token": "123123sdf"}'
-decoded_data_b =  json.loads(data_b.decode('utf-8'))
+decoded_data_b = json.loads(data_b.decode("utf-8"))
 print(decoded_data_b)
 print(json.dumps(decoded_data_b))
 

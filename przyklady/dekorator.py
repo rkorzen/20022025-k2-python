@@ -1,5 +1,6 @@
 from functools import wraps
 
+
 def mydecorator(func):
 
     @wraps(func)
@@ -12,14 +13,17 @@ def mydecorator(func):
 
     return wrapper
 
+
 @mydecorator
 def dowolna_funkcja():
     print("jestem dowolna funkcja")
+
 
 @mydecorator
 def add(a, b):
     """Dodawanie dwóch liczb"""
     return a + b
+
 
 # dowolna_funkcja = mydecorator(dowolna_funkcja)
 

@@ -13,10 +13,10 @@ closure2()
 
 def incrementator_fabric(step=1):
 
-     def incrementator(value):
-         return value + step
+    def incrementator(value):
+        return value + step
 
-     return incrementator
+    return incrementator
 
 
 incr_by_10 = incrementator_fabric(10)

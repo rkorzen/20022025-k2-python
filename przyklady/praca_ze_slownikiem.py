@@ -1,18 +1,18 @@
+from collections import defaultdict
 from pprint import pprint
 
 data = {}
 # data = dict()
 
-pprint([x for x in dir(data) if not x.startswith('_')])
+pprint([x for x in dir(data) if not x.startswith("_")])
 
 help(data.fromkeys)
 
 new_data = dict.fromkeys("abcd", 0)
 print(new_data)
 
-
 d1 = {"a": 2, "b": 3, "e": 4}
-d2 = {"a":4, "c": 2}
+d2 = {"a": 4, "c": 2}
 
 d1.update(d2)
 
@@ -29,14 +29,14 @@ for k, v in d1.items():
 
 print(d1.items())
 
-data = [('a', 4), ('b', 3), ('e', 4), ('c', 2)]
+data = [("a", 4), ("b", 3), ("e", 4), ("c", 2)]
 data2 = ["ab", "dd", "ea", "xz"]
 print(dict(data))
 print(dict(data2))
 
 print(dict(a=1, b=2, c=3, d=4))
 
-data3 = {"e": 1, "f":2}
+data3 = {"e": 1, "f": 2}
 print(dict(a=1, b=2, c=3, d=4, **data3))
 
 lista = [1, 2, 3]
@@ -44,6 +44,8 @@ lista = [1, 2, 3]
 
 def foo(a, b, c):
     print(a + b + c)
+
+
 # foo(lista)  foo([1, 2, 3])
 foo(*lista)  # foo(1, 2, 3)
 
@@ -58,10 +60,6 @@ help(dict.setdefault)
 data3.setdefault("x", 9)
 print(data3)
 
-from collections import defaultdict
-
 d = defaultdict(float)
 d["x"] += 1
 print(d["x"])
-
-

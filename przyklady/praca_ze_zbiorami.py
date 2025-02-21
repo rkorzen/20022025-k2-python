@@ -14,7 +14,3 @@ print(a ^ b)
 print(a.issubset(c))
 print(b.issubset(c))
 print(c.issuperset(a))
-
-
-
-

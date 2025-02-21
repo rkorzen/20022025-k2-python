@@ -5,12 +5,12 @@ lista = [10, 34, 39, 56, 232]
 kwadraty_parzystych = []
 for liczba in lista:
     if liczba % 2 == 0:
-        kwadraty_parzystych.append(liczba ** 2)
+        kwadraty_parzystych.append(liczba**2)
 
 print(kwadraty_parzystych)
 
 
-kwadraty = [x ** 2 for x in lista if x % 2 == 0]
+kwadraty = [x**2 for x in lista if x % 2 == 0]
 print(kwadraty)
 
 
@@ -26,7 +26,7 @@ for i in range(1, 10):
 pprint(tabliczka)
 
 
-pprint({(i*j for i in range(1, 10)) for j in range(1, 10) })
+pprint({(i * j for i in range(1, 10)) for j in range(1, 10)})
 
 
 print([x for x in range(10)])

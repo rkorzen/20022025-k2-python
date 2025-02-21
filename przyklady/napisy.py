@@ -12,15 +12,11 @@ print(id(napis2))
 x = "ALA" "KOT"
 print(x)
 
-x = "ALA" \
-    "KOT"
+x = "ALA" "KOT"
 print(x)
 
 
-x = (
-  "ALA"
-      "KOT"
-)
+x = "ALA" "KOT"
 
 print(x)
 
@@ -50,7 +46,6 @@ print("Ala ma {:.2f} lat i posiada {}".format(10, "KOTA"))
 print("Ala ma {} lat i posiada {}".format(10, "KOTA"))
 
 
-
 print("Ala ma {wiek:.2f} lat i posiada {zwierz}".format(wiek=10, zwierz="KOTA"))
 print("Ala ma {wiek} lat i posiada {zwierz}".format(wiek=10, zwierz="KOTA"))
 
@@ -61,8 +56,3 @@ zwierz = "KOTA"
 
 print(f"Ala ma {wiek:6.2f} lat i posiada {zwierz:^30}")
 print(f"Ala ma {wiek} lat i posiada {zwierz}")
-
-
-
-
-

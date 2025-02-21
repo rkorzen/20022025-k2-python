@@ -1,5 +1,6 @@
 """"
-Zdefinuj funkcję replace, która przyjmie nieokreślna liczbę tekstów, oraz parametrów i na podstawie tych paranetrow
+Zdefinuj funkcję replace, która przyjmie nieokreślna liczbę tekstów,
+oraz parametrów i na podstawie tych paranetrow
 dokona zamiany napisow w tekstach
 
 Przyklad
@@ -24,6 +25,8 @@ Pomocne:
 
 
 """
+
+
 def replace(*args, **kwargs):
     text = "\n".join(args)
 
@@ -39,5 +42,6 @@ if __name__ == "__main__":
     assert replace("") == ""
     assert replace("A", "B") == "A\nB"
     assert replace("A $a", "B", a=10) == "A 10\nB"
-    assert replace("A $a", "B", "$g", a=10, g="Ala ma kota") == "A 10\nB\nAla ma kota"
-
+    assert replace(
+        "A $a", "B", "$g", a=10, g="Ala ma kota"
+    ) == "A 10\nB\nAla ma kota"

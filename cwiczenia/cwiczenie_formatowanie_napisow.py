@@ -21,16 +21,16 @@ SUMA:                    zzz.zz PLN
 
 
 """
+
 import random
 from dataclasses import dataclass
+
 
 @dataclass
 class Product:
     name: str
     weight: float
     price: float
-
-
 
 
 # class Product:
@@ -48,14 +48,22 @@ class Product:
 #         return f"XXX(name='{self.name}', weight={self.weight}, price={self.price})"
 
 
-nazwy = ["Kasza Gryczna", "ryż", "Jabłka", "Pomarańcze", "Ziemniaki", "Filet z sdvheoruhfskjbv owuhfv sijkbv wiure"]
+nazwy = [
+    "Kasza Gryczna",
+    "ryż",
+    "Jabłka",
+    "Pomarańcze",
+    "Ziemniaki",
+    "Filet z sdvheoruhfskjbv owuhfv sijkbv wiure",
+]
 
 
 def random_price():
-    return round(random.random() * random.randint(1, 100),2)
+    return round(random.random() * random.randint(1, 100), 2)
+
 
 def random_weight():
-    return round(random.random() * random.randint(1, 3),2)
+    return round(random.random() * random.randint(1, 3), 2)
 
 
 produkty = [Product(nazwa, random_weight(), random_price()) for nazwa in nazwy]

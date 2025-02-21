@@ -1,4 +1,4 @@
-print([x for x in dir(list) if not x.startswith('_')])
+print([x for x in dir(list) if not x.startswith("_")])
 
 
 dane = [1, 2, 3]
@@ -58,4 +58,4 @@ del x[0]
 print(x)
 
 del x
-print(x)
+# print(x)
