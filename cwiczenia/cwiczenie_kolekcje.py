@@ -67,4 +67,4 @@ if __name__ == "__main__":
     print("Cos tam")
     main()
 
-Przerwa do 10:52
+# Przerwa do 10:5
