@@ -87,3 +87,122 @@ ale mozemy tez czesciowo zastapic a czesciowi wykorzystac
     assert d.x == 10
     assert d.attr1 = 1
     assert d.metoda() == 1011
+
+
+## Atrybuty, metody i atrybuty dynamiczne
+
+    
+
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+            self.age = 2025 - self.b_year
+    
+
+    ... mija rok i mamy 2026
+
+    p = Person("Rafał", 1980)
+    print(p.age) # 45
+
+
+poprawiam...
+
+    from datetime import datetime
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+            self.age = datetime.now().year - self.b_year
+    
+
+    ... mija rok i mamy 2026
+
+    p = Person("Rafał", 1980)
+    print(p.age) # 46
+
+    ... ale... mija kolejny rok i mamy 2027
+
+    print(p.age) # 46  (a powinno byc 47 )
+
+poprawiam...
+
+    from datetime import datetime
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+
+    
+        def age(self):
+            return datetime.now().year - self.b_year
+
+
+    ... mija rok i mamy 2026
+
+    p = Person("Rafał", 1980)
+    print(p.age()) # 46
+
+    ... ale... mija kolejny rok i mamy 2027
+
+    print(p.age()) # 47  (a powinno byc 47 )
+    print(p.age)   # bound method age of class Person.. 
+
+
+poprawiam ...
+
+
+    from datetime import datetime
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+
+    
+        @property  # atrybut dynamiczny
+        def age(self):
+            return datetime.now().year - self.b_year
+
+
+    ... mija rok i mamy 2026
+
+    p = Person("Rafał", 1980)
+    print(p.age) # 46
+
+    ... ale... mija kolejny rok i mamy 2027
+
+    print(p.age) # 47  (a powinno byc 47 )
+
+a czy mogę zrobić teraz tak by ustawic rok urodzenia poprzez podanie wieku?
+
+
+    p.age = 50
+    p.b_year  # 1977 (bo mam 2027 rok)
+
+
+potrzebna modyfikacja:
+
+
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+
+    
+        @property  # atrybut dynamiczny - getter - co ma sie stac jak pobieram te wartosc
+        def age(self):
+            return datetime.now().year - self.b_year
+
+        # do ustawienia sluzy setter
+        # jak mamy gettera (property) to mozemy z niego zrobic setter
+
+        @age.setter
+        def age(self, value):
+            self.b_year = datetime.now().year - value
+
+
