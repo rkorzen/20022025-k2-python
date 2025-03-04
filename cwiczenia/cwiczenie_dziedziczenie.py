@@ -37,13 +37,29 @@ Pracownik przedstawia sie
 'Jestem Rafał, moja stawka to 100/h, nierozliczone godziny s:0 n:0 t:0'
 
 Pracownik Premium ma mozliwosc otrzymania bonusa
-
->>> pe = PremiumEmployee("Adam", rate_per_hour=100)
+1
+>>> pe = PremiumEmployee("Adam", rate_per_hour=200)
 >>> pe.register_time(5)
 >>> pe.add_bonus(1000)
+>>> pe.add_bonus(500)
+>>> pe.add_percentage_bonus(10)
 >>> pe.pay_salary()
-1500
+2750
 >>> pe.pay_salary()
+0
+
+2
+# >>> pe = PremiumEmployee("Adam", rate_per_hour=200)
+# >>> pe.register_time(5)
+# >>> ba1 = AmountBonus(1000)
+# >>> ba2 = AmountBonus(500)
+# >>> pe.add_bonus(ba1)
+# >>> pe.add_bonus(ba2)
+# >>> pb = PercentageBonus(10)
+# >>> pe.add_bonus(pb)
+# >>> pe.pay_salary()
+# 2750
+# >>> pe.pay_salary()
 0
 
 """
@@ -56,7 +72,6 @@ class Employee:
 
         self.hours: int = 0
         self.over_hours: int = 0
-        self.total_hours: int = 0
 
 
     def introduce(self) -> str:
@@ -75,3 +90,19 @@ class Employee:
         else:
             self.hours = 8
             self.over_hours = hours - 8
+
+class PremiumEmployee(Employee):
+
+    def __init__(self, name: str, rate_per_hour: int):
+        super().__init__(name, rate_per_hour)
+        self.bonuses: int = 0
+
+    def add_bonus(self, amount: int) -> None:
+        self.bonuses = self.bonuses + amount
+
+    def pay_salary(self) -> int:
+        to_pay = super().pay_salary()
+        to_pay += self.bonuses
+        self.bonuses = 0
+        return to_pay
+
