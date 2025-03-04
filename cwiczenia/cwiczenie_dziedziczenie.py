@@ -96,13 +96,20 @@ class PremiumEmployee(Employee):
     def __init__(self, name: str, rate_per_hour: int):
         super().__init__(name, rate_per_hour)
         self.bonuses: int = 0
+        self.percentage_bonuses: int = 0
 
     def add_bonus(self, amount: int) -> None:
         self.bonuses = self.bonuses + amount
+
+    def add_percentage_bonus(self, amount: int) -> None:
+        self.percentage_bonuses += amount
 
     def pay_salary(self) -> int:
         to_pay = super().pay_salary()
         to_pay += self.bonuses
         self.bonuses = 0
+        to_pay = to_pay + int(to_pay * self.percentage_bonuses / 100)
         return to_pay
+
+# SOLID
 
