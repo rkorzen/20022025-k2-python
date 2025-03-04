@@ -60,10 +60,52 @@ print(s.side)
 
 from math import pi
 
+class Circle:
+    def __init__(self, radius: float):
+        self.radius: float = radius
+
+    @property
+    def radius(self):
+        return self._radius
+
+    @radius.setter
+    def radius(self, value):
+        if value < 0:
+            raise ValueError("Circle radius must be greater than or equal to zero")
+        self._radius: float = value
+
+    @property
+    def area(self):
+        return pi * (self.radius ** 2)
+
+    @area.setter
+    def area(self, value):
+        self.radius  =  value ** 0.5 / pi
+
+    @property
+    def diameter(self):
+        return self.radius * 2
+
+    @diameter.setter
+    def diameter(self, value):
+        self.radius = value / 2
+
+    @property
+    def rectangle(self):
+        return 2 * pi * self.radius
+
+    @rectangle.setter
+    def rectangle(self, value):
+        self.radius = value / (2 * pi)
+
 c = Circle(10)
-c.radius
-c.diameter
-c.area
-c.rectangle
+print(c.radius,
+c.diameter,
+c.area,
+c.rectangle)
+
+
+
+
 
 
