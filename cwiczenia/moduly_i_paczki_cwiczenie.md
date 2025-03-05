@@ -18,3 +18,14 @@ projekt
         test_geometry.py
         test_algebra.py
 ```
+
+przydatna moze byc funkcja zip
+
+```python
+a = [1, 2, 3]
+b = [2, 3, 4]
+
+row = []
+for el_a, el_b in zip(a, b):
+    row.append(el_a + el_b)
+```
