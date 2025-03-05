@@ -206,3 +206,25 @@ potrzebna modyfikacja:
             self.b_year = datetime.now().year - value
 
 
+## Przeciażanie operatorów
+
+
+    class Person:
+        
+        def __init__(self, name, b_year):
+            self.name: str = name
+            self.b_year: int = b_year
+
+    
+        @property  # atrybut dynamiczny - getter - co ma sie stac jak pobieram te wartosc
+        def age(self):
+            return datetime.now().year - self.b_year
+
+        def __gt__(self, other):
+            if isinstance(other, self.__class__):
+                return self.age > other.age
+
+    p1 = Person("A", 1980)
+    p2 = Person("B", 1970)
+
+    p1 > p2
