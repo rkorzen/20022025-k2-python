@@ -26,3 +26,24 @@ total_time["user-1"] += 10
 
 sorted(total_time.items(), key=lambda x: x[1])
 """
+
+from collections import defaultdict
+
+last_login = {}
+total_time = defaultdict(int)
+
+with open("dane/logs.txt") as f:
+    for line in f:
+        #login;action;time
+        login, action, t_str = line.strip().split(";")
+        t = int(t_str)
+
+        if action == "LOGIN":
+            last_login[login] = t
+        elif action == "LOGOUT":
+            total_time[login] += t - last_login.get(login, 0)
+
+print("Czas przebywania w systemie:")
+for u, t in sorted(total_time.items(), key=lambda x: x[1], reverse=True):
+    print(f" - {u}: {t} s")
+
