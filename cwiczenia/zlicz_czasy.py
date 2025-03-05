@@ -24,4 +24,5 @@ from collections import defaultdict
 total_time = defaultdict(int)
 total_time["user-1"] += 10
 
+sorted(total_time.items(), key=lambda x: x[1])
 """
