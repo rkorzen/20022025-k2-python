@@ -1,0 +1,1 @@
+print("Kod z init mojej paczki")
