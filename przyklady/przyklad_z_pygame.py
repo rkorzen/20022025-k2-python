@@ -25,6 +25,9 @@ class Circle:
         self.x += dx
         self.y += dy
 
+    def collides_with(self, other) -> bool:
+        ...
+
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
@@ -68,9 +71,14 @@ def main():
         player.draw(screen)
         target.draw(screen)
 
+        if player.collides_with(target):
+            text = font.render("BUM", True, (0, 255, 0))
+            text_rect = text.get_rect(center=(width//2, 50))
+            screen.blit(text, text_rect)
+
         if player == target:
             text = font.render("IDEALNIE", True, (0, 255, 0))
-            text_rect = text.get_rect(center=(width//2, 50))
+            text_rect = text.get_rect(center=(width//2, 25))
             screen.blit(text, text_rect)
 
 
