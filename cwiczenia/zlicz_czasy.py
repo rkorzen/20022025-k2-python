@@ -26,13 +26,19 @@ total_time["user-1"] += 10
 
 sorted(total_time.items(), key=lambda x: x[1])
 """
-
+import sys
 from collections import defaultdict
+
+if len(sys.argv) != 2:
+    print("Poprawne wywołanie to:\n python zlicz_czasy.py sciezka/do/pliku")
+    exit(1)
+
+file_path = sys.argv[1]
 
 last_login = {}
 total_time = defaultdict(int)
 
-with open("dane/logs.txt") as f:
+with open(file_path) as f:
     for line in f:
         #login;action;time
         login, action, t_str = line.strip().split(";")
