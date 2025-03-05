@@ -13,11 +13,8 @@ class Circle:
         self.alpha = alpha
 
     def draw(self, screen: pygame.Surface):
-
         surface = pygame.Surface((self.radius * 2, self.radius * 2), pygame.SRCALPHA)
-
         pygame.draw.circle(surface, (*self.color, self.alpha), (self.radius, self.radius), self.radius)
-
         screen.blit(surface, (self.x - self.radius, self.y - self.radius))
 
 
@@ -26,11 +23,22 @@ class Circle:
         self.y += dy
 
     def collides_with(self, other) -> bool:
-        ...
+        distance = ((self.x - other.x) ** 2 + (self.y - other.y) ** 2 ) ** 0.5
+        return distance <= (self.radius + other.radius)
 
+    @property
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+    def _calculate_radius(self, other):
+        new_area = self.area * other.area
+        return new_area ** 0.5 / 3.14
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
+
+    def __add__(self, other):
+        return Circle(self.x, self.y, self._calculate_radius(other), self.color)
 
 
 def main():

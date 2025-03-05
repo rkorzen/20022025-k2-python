@@ -228,3 +228,13 @@ potrzebna modyfikacja:
     p2 = Person("B", 1970)
 
     p1 > p2
+
+
+## Iteratory
+
+    class Iterator:
+
+        def __iter__(self): ...
+        
+        def __next__(self): ...
+         

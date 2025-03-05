@@ -1,5 +1,5 @@
 import pytest
-from kalkulator import add, sub, mul, div, power
+from kalkulator import add, sub, mul, div
 
 
 def test_add():
