@@ -18,22 +18,43 @@ $ python clean_emails.py data/wrong_emails.txt data/cleaned_emails.txt
 import sys
 
 
+
 # odczytaj plik
 def odczytaj_plik(plik_wejsciowy) -> list[str]:
-    # podzielic zawartosc po bialych znakach
-
-    text = "A B\nC\tD"
-    dane = text.split()
-
+    with open(plik_wejsciowy) as f:
+        dane = f.read().split()
+    return dane
 
 def preprocessing(lista: list[str]) -> list[str]:
     """poprawia takie rzeczy jak no _at_ -> @"""
+    dane = []
 
+    rules = [
+        lambda x: x.replace("_at_", "@"),
+        str.lower
+    ]
+    for el in lista:
+        for rule in rules:
+            el = rule(el)
+        dane.append(el)
+
+    return dane
 
 # walidacja każdego z potencjalnych emaili i utworzenie listy wynikowej
 def validate_email(text: str) -> bool:
     """Zwraca True jeśli text spelnia warunki bycia emailem"""
-    ...
+
+    tests = [
+        lambda x: x.count("@") != 1,
+        lambda x: x.startswith("@"),
+    ]
+
+    for test in tests:
+        if test(text):
+            return False
+
+    return True
+
 
 
 def validate_all(dane: list[str]) -> bool:
@@ -53,8 +74,15 @@ def export(plik_wyjsciowy: str, dane: list[str]):
 
 # funkcja glowna
 
-def main():
-    dane = odczytaj_plik(sys.argv[1])
+def main(plik_wejsciowy: str, plik_wyjsciowy: str):
+    dane = odczytaj_plik(plik_wejsciowy)
     dane = preprocessing(dane)
     result = validate_all(dane)
-    export(sys.argv[2], result)
+    export(plik_wyjsciowy, result)
+
+
+if __name__ == "__main__":
+    plik_wejsciowy = sys.argv[1]
+    plik_wyjsciowy = sys.argv[2]
+
+    main(plik_wejsciowy, plik_wyjsciowy)
