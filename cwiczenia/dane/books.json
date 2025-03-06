@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Pan Tadeusz",
+        "author": "Adam Mickiewicz",
+        "year": 1834,
+        "isbn": "9788373271685",
+        "genre": "poezja",
+        "available": true,
+        "added_on": "2025-03-06T14:15:08.763198",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    }
+]
