@@ -52,3 +52,31 @@ with open(...)  as f:
 with open(..., "w")  as f:
     writer = csv.writer(f, delimiter, quotechar)
     writer = csv.DictWriter(f, delimiter, quotechar)
+
+## JSON
+
+import json
+
+structura_python = {'a':1, "b": "Zażółć gęślą jaźń"}
+
+json.dumps(structura_python)
+
+json_text = '{"a": 1, "b": "Za\\u017c\\u00f3\\u0142\\u0107 g\\u0119\\u015bl\\u0105 ja\\u017a\\u0144"}'
+
+json.loads(json_text)
+
+
+with open("plik.json") as f:
+    dane = json.load(f)
+
+
+with open("plik.json", "w") as f:
+    json.dump(f, dane)
+
+In [17]: r
+Out[17]: Record(id=31, product='Tablet', price=1400, quantity=1, date='2025-03-06')
+
+zamowienia = [r]
+
+In [21]: json.dumps([vars(r) for r in zamowienia])
+Out[21]: '[{"id": 31, "product": "Tablet", "price": 1400, "quantity": 1, "date": "2025-03-06"}]'
