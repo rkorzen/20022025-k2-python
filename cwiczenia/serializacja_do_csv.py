@@ -1,5 +1,7 @@
 import csv
+import json
 from dataclasses import dataclass
+from datetime import date
 
 @dataclass
 class Record:
@@ -7,15 +9,26 @@ class Record:
     product: str
     price: int
     quantity: int
-    date: str
+    date: date
 
     def __post_init__(self):
         self.id = int(self.id)
         self.price = int(self.price)
         self.quantity = int(self.quantity)
+        self.date = date.fromisoformat(self.date)
 
     def total_price(self):
         return self.price * self.quantity
+
+    def serialize(self):
+        """To dict serialzie - zamienia obiekty takie date na napisy"""
+        return {
+            "id": self.id,
+            "product": self.product,
+            "price": self.price,
+            "quantity": self.quantity,
+            "date": self.date.isoformat()
+        }
 
 
 class CSVAdapter:
@@ -65,8 +78,17 @@ class TextAdapter:
 
 
 class JsonAdapter:
-    # to trzeba wykonac
 
+    def read(self, file_name) -> list[Record]:
+        with open(file_name) as json_file:
+            data = json.load(json_file)
+            data = [Record(**d) for d in data]
+        return data
+
+    def write(self, data: list[Record], file_name):
+        with open(file_name, 'w') as file:
+            data = [r.serialize() for r in data]
+            json.dump(data, file, indent=4)
 
 
 adapter = TextAdapter()
