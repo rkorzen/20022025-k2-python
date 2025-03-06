@@ -184,6 +184,9 @@ class Library:
             return True
         return False
 
+    def update_db(self):
+        self.adapter.write(self._books)
+
 
 if __name__ == '__main__':
 
@@ -245,5 +248,8 @@ if __name__ == '__main__':
     for book in library.get_all_books():
         print(book)
 
-    print(library.get_book_by_id(10))
-    library.delete_book(10)
+    # print(library.get_book_by_id(10))
+    # library.delete_book(10)
+
+    library.update_db()
+
