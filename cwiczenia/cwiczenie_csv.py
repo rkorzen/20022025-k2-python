@@ -7,4 +7,7 @@ Twoje zadanie polega na napisaniu skryptu w Pythonie, który:
     Obliczy sumaryczną sprzedaż dla każdego typu produktu.
     Zapisze wyniki do nowego pliku sales_summary.csv w formacie:
 
+    nazwa;suma
+
+
 """
