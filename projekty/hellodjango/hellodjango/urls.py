@@ -22,5 +22,6 @@ urlpatterns = [
     path("greetings/", include("greetings.urls")),
     path("", include("algebra.urls")),
     path("", include("optimalizations.urls")),
+    path("books/", include(("biblioteka.urls")))
 
 ]

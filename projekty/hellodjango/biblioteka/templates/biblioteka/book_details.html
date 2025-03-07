@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Szczegóły książki</h1>
+
+  <table class="table">
+    <tr><th>Tytul</th><td>{{ book.title }}</td></tr>
+    <tr><th>Autor</th><td>{{ book.author }}</td></tr>
+    <tr><th>Rok wydania</th><td>{{ book.year }}</td></tr>
+    <tr><th>ISBN</th><td>{{ book.isbn }}</td></tr>
+    <tr><th>Czy dostępna</th><td>{{ book.available }}</td></tr>
+    <tr><th>Dodana w dniu</th><td>{{ book.added_on }}</td></tr>
+    <tr><th>Ostatnie wypożyczenie</th><td>{{ book.last_borrowed_on }}</td></tr>
+    <tr><th>Ostatni zwrot</th><td>{{ book.last_return_on }}</td></tr>
+  </table>
+
+{% endblock %}

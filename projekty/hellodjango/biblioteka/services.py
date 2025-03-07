@@ -75,7 +75,8 @@ class Library:
             return []
 
         def condition(q, b):
-            return q.lower() in b.title.lower() or q in b.author.lower()
+            q = q.lower()
+            return q in b.title.lower() or q in b.author.lower()
 
         result = [b for b in self._books if condition(q, b)]
         return result
