@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Strona powitania {% endblock %}
+
+{% block content %}
+
+<h1>Hello {{ name }}!</h1>
+<p>{{ wiek }}</p>
+
+{% include "includes/funny_include.html" %}
+
+{% endblock %}
+

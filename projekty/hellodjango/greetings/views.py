@@ -1,19 +1,29 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 from django.utils import timezone
-
+from django.template import loader
 # Create your views here.
 def hello(request: HttpRequest) -> HttpResponse:
     return HttpResponse("Hello Django!")
 
 
 def hello_name(request: HttpRequest, name, wiek=None) -> HttpResponse:
+    template_name = "greetings/hello_name.html"
+    now = timezone.now()
+    context = {"name": name, "wiek": None}
     if wiek:
-        now = timezone.now()
+        context["wiek"] = now.year - wiek
+        content = loader.render_to_string(template_name, context, request)
+        return HttpResponse(content)
 
-        return HttpResponse(f"Hello {name} ({now.year - int(wiek)})!")
-
-    return HttpResponse(f"Hello {name}!")
+    return render(request, template_name, context)
 
 def hello_last_name(request, name, lastname):
     return HttpResponse(f"Hello {name} {lastname}!")
+
+def test(request):
+    return render(
+        request,
+        "base.html",
+        {}
+    )

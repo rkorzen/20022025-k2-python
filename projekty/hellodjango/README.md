@@ -46,4 +46,33 @@ w pliku views - zaimportuj te funkcje i utworz odpowiedni widok, którą wykorzy
 
 /spalanie/100/4.5/7.2
 
-...
+
+## cwiczenie 2
+
+Dodaj szablon i zmodyfikuj funkcje widoku tak by z niego korzystaly w pozostaluch aplikacjach
+
+uzyj render(request, template_name, context)
+
+
+context to jest slownik - ktore przykazuje klucze i wartosci do szablon
+
+uzyj extends do tego by korzystac z szablony bazowego
+
+pamietaj o dodaniu aplikacji w settings (INSTALED_APPS)
+Dodaj katalog templates w katalogu glownym projektu i uwzglednij go w settings:
+
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [BASE_DIR / "templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
+]
