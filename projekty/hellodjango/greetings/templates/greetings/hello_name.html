@@ -4,8 +4,36 @@
 
 {% block content %}
 
-<h1>Hello {{ name }}!</h1>
+<h1>Hello {{ name }} {{ lastname }}!</h1>
 <p>{{ wiek }}</p>
+
+
+{% if koncowki %}
+<p>Przykładowe użycia</p>
+
+<ul>
+{% for link in koncowki %}
+<li><a href="{{link}}" target="_blank">{{link}}</a> </li>
+{% endfor %}
+</ul>
+
+Przykładowa zawartość słownika:
+<br>
+{{ slownik }}
+<br>
+wybranie elementu a to:
+
+{{ slownik.a }}
+
+<br>
+
+Osoba: {{ osoba }}
+<br>
+wiek: {{ osoba.age }}
+
+Osoba odzywa sie: {{ osoba.odezwij_sie|upper }}
+
+{% endif %}
 
 {% include "includes/funny_include.html" %}
 

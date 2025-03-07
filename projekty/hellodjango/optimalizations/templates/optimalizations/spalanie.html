@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} obliczeanie spalania na dystansie {% endblock %}
+
+{% block content %}
+
+<p>Na dystansie {{dystans}} przy koszcie paliwa {{koszt}} za 1 l i spalniu {{ spalanie }} / 100 km </p>
+<p>Koszt podróży: {{ result }}</p>
+
+{% include "includes/funny_include.html" %}
+
+{% endblock %}
+

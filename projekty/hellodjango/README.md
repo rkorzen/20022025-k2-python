@@ -76,3 +76,17 @@ TEMPLATES = [
         },
     },
 ]
+
+
+## cwiczenie 3
+
+utworz aplikacje biblioteka
+w niej utworz services.py i dodaj kod z mini_projekt.py (w moim repo to juz jest)
+dodaj aplikacje do INSTALLED_APPS
+utworz routing (urls)
+
+/books/ - widzi liste książek
+/books/1 -  widzo książkę o id = 1
+
+
+Przerwwa obiadowwa do 13:17

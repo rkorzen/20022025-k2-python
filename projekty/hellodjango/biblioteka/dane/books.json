@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Pan Tadeusz",
+        "author": "Adam Mickiewicz",
+        "year": 1834,
+        "isbn": "9788373271685",
+        "genre": "epopeja narodowa",
+        "available": true,
+        "added_on": "2025-03-06T14:15:08.763198",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    },
+    {
+        "id": 2,
+        "title": "Pan Tadeusz",
+        "author": "Adam Mickiewicz",
+        "year": 1834,
+        "isbn": "9788373271685",
+        "genre": "poezja",
+        "available": true,
+        "added_on": "2025-03-06T15:04:08.487206",
+        "last_borrowed_on": "2025-03-07T12:44:59.674813",
+        "last_return_on": "2025-03-07T12:44:59.674843"
+    },
+    {
+        "id": 4,
+        "title": "Quo Vadis",
+        "author": "Henryk Sienkiewicz",
+        "year": 1896,
+        "isbn": "9788373271906",
+        "genre": "powie\u015b\u0107 historyczna",
+        "available": true,
+        "added_on": "2025-03-06T15:04:08.487220",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    },
+    {
+        "id": 4,
+        "title": "Pan Tadeusz",
+        "author": "Adam Mickiewicz",
+        "year": 1834,
+        "isbn": "9788373271685",
+        "genre": "poezja",
+        "available": true,
+        "added_on": "2025-03-07T12:44:59.674665",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    },
+    {
+        "id": 5,
+        "title": "Lalka",
+        "author": "Boles\u0142aw Prus",
+        "year": 1890,
+        "isbn": "9788374350037",
+        "genre": "powie\u015b\u0107",
+        "available": true,
+        "added_on": "2025-03-07T12:44:59.674676",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    },
+    {
+        "id": 6,
+        "title": "Quo Vadis",
+        "author": "Henryk Sienkiewicz",
+        "year": 1896,
+        "isbn": "9788373271906",
+        "genre": "powie\u015b\u0107 historyczna",
+        "available": true,
+        "added_on": "2025-03-07T12:44:59.674678",
+        "last_borrowed_on": null,
+        "last_return_on": null
+    }
+]
