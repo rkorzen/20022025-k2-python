@@ -8,11 +8,16 @@ class Author(models.Model):
     date_of_death = models.DateField(blank=True, null=True)
     bio = models.TextField(blank=True)    
 
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
 
 class Genre(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200)
     description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Book(models.Model):
@@ -23,3 +28,5 @@ class Book(models.Model):
     isbn = models.CharField(max_length=13, help_text="13 Character ISBN number", blank=True, null=True)
     is_available = models.BooleanField(default=True)
  
+    def __str__(self):
+        return f"{self.title} ({self.author})"
