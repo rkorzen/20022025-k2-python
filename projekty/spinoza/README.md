@@ -86,3 +86,15 @@ In [16]: book.save()
 In [17]: borrowing.save()
 
 In [18]: 
+
+
+### Zadanie: Dodanei widoki Home i About
+
+Widok Home - to wyświetlenie szablonu base.html 
+
+127.0.0.1:8000/
+
+Widok About - to wyświetlenie szablonu about.html
+
+127.0.0.1:8000/about/
+
