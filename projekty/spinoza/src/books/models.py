@@ -24,9 +24,18 @@ class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     genre = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True)
-    summary = models.TextField(help_text="Enter a brief description of the book")
+    summary = models.TextField(help_text="Enter a brief description of the book", blank=True)
     isbn = models.CharField(max_length=13, help_text="13 Character ISBN number", blank=True, null=True)
     is_available = models.BooleanField(default=True)
  
     def __str__(self):
         return f"{self.title} ({self.author})"
+    
+
+class Borrowing(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    borrowing_date = models.DateTimeField(auto_now_add=True)
+    return_date = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.book} ({self.borrowing_date} - {self.return_date})"

@@ -7,5 +7,35 @@
 <p>{{ book.genre }}</p>
 <p>{{ book.summary }}</p>
 <p>{{ book.isbn }}</p>
-<p>{{ book.is_available }}</p>
+<p>
+
+{% if book.is_available %}
+<a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
+{% else %}
+<button class="btn btn-secondary">Return</button>
+{% endif %}
+
+</p>
+
+<div>
+<h2>Wypożyczenia</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Data wypożyczenia</th>
+            <th>Data zwrotu</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    {% for borrowing in book.borrowing_set.all %}
+    <tr>
+        <td>{{ borrowing.borrowing_date }}</td>
+        <td>{{ borrowing.return_date }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+
 {% endblock %}

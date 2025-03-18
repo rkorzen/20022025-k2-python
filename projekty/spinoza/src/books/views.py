@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Book
+from django.shortcuts import render, redirect
+from .models import Book, Author, Genre, Borrowing
 # Create your views here.
 
 def book_list(request):
@@ -9,3 +9,32 @@ def book_list(request):
 def book_details(request, id):
     book = Book.objects.get(id=id)
     return render(request, "books/book_details.html", {"book": book})
+
+
+def borrow_book(request, id):
+    book = Book.objects.get(id=id)
+    Borrowing.objects.create(book=book)
+    book.is_available = False
+    book.save()
+    return redirect(f"/books/{id}")
+
+
+
+def author_list(request):
+    authors = Author.objects.all()
+    return render(request, "books/author_list.html", {"authors": authors})
+
+def genre_list(request):
+    genres = Genre.objects.all()
+    return render(request, "books/genre_list.html", {"genres": genres})
+
+def author_details(request, id):
+    author = Author.objects.get(id=id)
+    books = Book.objects.filter(author=author)
+    return render(request, "books/book_list.html", {"author": author, "books": books})
+
+def genre_details(request, id):
+    genre = Genre.objects.get(id=id)
+    books = Book.objects.filter(genre=genre)
+    return render(request, "books/book_list.html", {"genre": genre, "books": books})
+

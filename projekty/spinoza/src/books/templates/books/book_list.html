@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% if author %}
+    <h1>Books by {{ author }}</h1>
+{% elif genre %}
+    <h1>Books in {{ genre }}</h1>
+{% else %}
+    <h1>All books</h1>
+{% endif %}
 <ul>    
     {% for book in books %}
         <li><a href="/books/{{book.id}}">{{ book.title }}</a></li>
