@@ -23,4 +23,5 @@ import books.views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("books.urls")),
+    path("", include("home.urls")),
 ]
