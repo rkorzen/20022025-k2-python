@@ -33,12 +33,13 @@ class Book(models.Model):
     @property
     def is_available(self):
         # sprawdź czy istnieje wypożyczenie, które nie zostało zwrócone
-        return not self.borrowing_set.last().return_date is None
+        return not self.borrowing_set.last().return_date is None if self.borrowing_set.last() else True
 
 
 
 
 class Borrowing(models.Model):
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     borrowing_date = models.DateTimeField(auto_now_add=True)
     return_date = models.DateTimeField(null=True, blank=True)

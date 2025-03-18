@@ -8,13 +8,15 @@
 <p>{{ book.summary }}</p>
 <p>{{ book.isbn }}</p>
 <p>
-{{ book.is_available }}
-{% if book.is_available %}
-<a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
-{% else %}
-<a class="btn btn-secondary" href="/books/{{ book.id }}/return">Return</a>
+{% if request.user.is_authenticated %}
+    {% if book.is_available %}
+    <a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
+    {% else %}
+        {% if book.borrowing_set.last.user == request.user or request.user.is_superuser %}
+            <a class="btn btn-secondary" href="/books/{{ book.id }}/return">Return</a>
+        {% endif %}
+    {% endif %}
 {% endif %}
-
 </p>
 
 <div>
@@ -22,6 +24,7 @@
 <table class="table table-striped">
     <thead>
         <tr>
+            <th>Użytkownik</th>
             <th>Data wypożyczenia</th>
             <th>Data zwrotu</th>
         </tr>
@@ -30,6 +33,7 @@
 
     {% for borrowing in book.borrowing_set.all %}
     <tr>
+        <td>{{ borrowing.user.username }}</td>
         <td>{{ borrowing.borrowing_date }}</td>
         <td>{{ borrowing.return_date }}</td>
     </tr>
