@@ -11,6 +11,21 @@ lub
     uv add django-extensions
 
 
+### w settings.py dodać do INSTALLED_APPS
+
+
+    INSTALLED_APPS = [
+        ...
+        "django_extensions",
+        ...
+    ]
+
+### Uruchomienie shell_plus
+
+```bash
+python manage.py shell_plus
+```
+
 ## Migrations
 
 ```bash
