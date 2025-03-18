@@ -26,11 +26,17 @@ class Book(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True)
     summary = models.TextField(help_text="Enter a brief description of the book", blank=True)
     isbn = models.CharField(max_length=13, help_text="13 Character ISBN number", blank=True, null=True)
-    is_available = models.BooleanField(default=True)
  
     def __str__(self):
         return f"{self.title} ({self.author})"
     
+    @property
+    def is_available(self):
+        # sprawdź czy istnieje wypożyczenie, które nie zostało zwrócone
+        return not self.borrowing_set.last().return_date is None
+
+
+
 
 class Borrowing(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)

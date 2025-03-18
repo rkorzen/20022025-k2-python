@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
+
 from .models import Book, Author, Genre, Borrowing
+from django.utils import timezone
 # Create your views here.
 
 def book_list(request):
@@ -14,11 +16,14 @@ def book_details(request, id):
 def borrow_book(request, id):
     book = Book.objects.get(id=id)
     Borrowing.objects.create(book=book)
-    book.is_available = False
-    book.save()
     return redirect(f"/books/{id}")
 
-
+def return_book(request, id):
+    book = Book.objects.get(id=id)
+    borrowing = book.borrowing_set.last()
+    borrowing.return_date = timezone.now()
+    borrowing.save()
+    return redirect(f"/books/{id}")
 
 def author_list(request):
     authors = Author.objects.all()

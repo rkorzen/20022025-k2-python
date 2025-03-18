@@ -8,11 +8,11 @@
 <p>{{ book.summary }}</p>
 <p>{{ book.isbn }}</p>
 <p>
-
+{{ book.is_available }}
 {% if book.is_available %}
 <a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
 {% else %}
-<button class="btn btn-secondary">Return</button>
+<a class="btn btn-secondary" href="/books/{{ book.id }}/return">Return</a>
 {% endif %}
 
 </p>
