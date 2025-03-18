@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     "django_extensions",
 
+    "accounts.apps.AccountsConfig",
     "books.apps.BooksConfig",
     "home.apps.HomeConfig",
 

@@ -98,3 +98,25 @@ Widok About - to wyświetlenie szablonu about.html
 
 127.0.0.1:8000/about/
 
+### Testy
+
+```bash
+python manage.py test
+```
+
+#### testy z coverage
+
+Instalacja coverage
+```bash
+pip install coverage
+```
+Wykonanie testów z coverage
+
+```bash
+coverage run manage.py test
+coverage report
+coverage html
+```
+Trzeba otworzyć plik index.html w katalogu htmlcov w przeglądarce
+
+
