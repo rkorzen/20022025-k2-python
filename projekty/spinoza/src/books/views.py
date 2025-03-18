@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-
+from django.contrib import messages
 from .models import Book, Author, Genre, Borrowing
 from django.utils import timezone
 # Create your views here.
@@ -15,15 +15,23 @@ def book_details(request, id):
 
 def borrow_book(request, id):
     book = Book.objects.get(id=id)
-    Borrowing.objects.create(book=book)
-    return redirect(f"/books/{id}")
+    if book.is_available:
+        Borrowing.objects.create(book=book)
+        messages.success(request, "Książka została wypożyczona")
+    else:
+        messages.error(request, "Książka jest niedostępna")
+    return redirect(f"/books/")
 
 def return_book(request, id):
     book = Book.objects.get(id=id)
-    borrowing = book.borrowing_set.last()
-    borrowing.return_date = timezone.now()
-    borrowing.save()
-    return redirect(f"/books/{id}")
+    if not book.is_available:
+        borrowing = book.borrowing_set.last()
+        borrowing.return_date = timezone.now()
+        borrowing.save()
+        messages.success(request, "Książka została zwrócona")
+    else:
+        messages.error(request, "Nie można zwrócić książki, która nie została wypożyczona")
+    return redirect(f"/books/")
 
 def author_list(request):
     authors = Author.objects.all()
