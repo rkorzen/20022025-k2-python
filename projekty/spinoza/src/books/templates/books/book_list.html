@@ -1,17 +1,35 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 
-{% if author %}
-    <h1>Books by {{ author }}</h1>
-{% elif genre %}
-    <h1>Books in {{ genre }}</h1>
-{% else %}
-    <h1>All books</h1>
-{% endif %}
-<ul>    
-    {% for book in books %}
-        <li><a href="/books/{{book.id}}">{{ book.title }}</a></li>
-    {% endfor %}
-</ul>
+
+<div class="row">
+    <div class="col-md-6">
+      
+        {% if author %}
+            <h1>Books by {{ author }}</h1>
+        {% elif genre %}
+            <h1>Books in {{ genre }}</h1>
+        {% else %}
+            <h1>All books</h1>
+        {% endif %}
+        <ul>    
+            {% for book in books %}
+                <li><a href="/books/{{book.id}}">{{ book.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+
+    </div>
+    <div class="col-md-6">
+        {% if request.user.is_superuser %}
+        <h1>Dodaj książkę</h1>
+        {% crispy form %}
+        {% endif %}
+    </div>
+</div>
+
+
+
+
 {% endblock %}

@@ -1,5 +1,6 @@
 from django.urls import path
 import books.views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path("books/", books.views.book_list, name="book_list"), 
@@ -10,4 +11,5 @@ urlpatterns = [
     path("authors/<int:id>", books.views.author_details, name="author_details"),
     path("genres/", books.views.genre_list, name="genre_list"),
     path("genres/<int:id>", books.views.genre_details, name="genre_details"),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
 ]

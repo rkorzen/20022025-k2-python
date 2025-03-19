@@ -4,12 +4,23 @@ from django.contrib import messages
 from .models import Book, Author, Genre, Borrowing, Review
 from django.utils import timezone
 from django.contrib.auth.models import User
-from .forms import GenreForm
+from .forms import GenreForm, AuthorForm, BookForm
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login
 # Create your views here.
 
 def book_list(request):
+    if request.method == "POST":
+        form = BookForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Książka została dodana")
+        else:
+            messages.error(request, "Nieprawidłowe dane")
+
+    form = BookForm()
     books = Book.objects.all()
-    return render(request, "books/book_list.html", {"books": books, "current_page": "books"})
+    return render(request, "books/book_list.html", {"books": books, "current_page": "books", "form": form})
 
 def book_details(request, id):
     book = Book.objects.get(id=id)
@@ -68,8 +79,17 @@ def return_book(request, id):
     return redirect(f"/books/{id}")
 
 def author_list(request):
+    if request.method == "POST":
+        form = AuthorForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Autor został dodany")
+        else:
+            messages.error(request, "Nieprawidłowe dane")
+
+    form = AuthorForm()        
     authors = Author.objects.all()
-    return render(request, "books/author_list.html", {"authors": authors, "current_page": "authors"})
+    return render(request, "books/author_list.html", {"authors": authors, "current_page": "authors", "form": form})
 
 def genre_list(request):
     if request.method == "POST":
@@ -93,4 +113,16 @@ def genre_details(request, id):
     genre = Genre.objects.get(id=id)
     books = Book.objects.filter(genre=genre)
     return render(request, "books/book_list.html", {"genre": genre, "books": books})
+
+def login_view(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('home')  # lub inna strona po zalogowaniu
+    else:
+        form = AuthenticationForm()
+    
+    return render(request, 'registration/login.html', {'form': form})
 

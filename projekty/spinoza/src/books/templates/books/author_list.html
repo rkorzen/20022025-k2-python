@@ -1,9 +1,24 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% block content %}
-<ul>    
-    {% for author in authors %}
-        <li><a href="/authors/{{author.id}}">{{ author}}</a></li>
-    {% endfor %}
-</ul>
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>Lista Autorów</h1>
+
+        <ul>    
+            {% for author in authors %}
+                <li><a href="/authors/{{author.id}}">{{ author }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div class="col-md-6">
+        {% if request.user.is_superuser %}
+            <h1>Dodaj autora</h1>
+            {% crispy form%}
+        {% endif %}
+    </div>
+</div>
+
 {% endblock %}
