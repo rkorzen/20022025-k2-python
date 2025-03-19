@@ -7,7 +7,7 @@ def home(request):
     return render(request, "base.html")
 
 def about(request):
-    return render(request, "home/about.html")
+    return render(request, "home/about.html", {"current_page": "about"})
 
 def contact(request):
 
@@ -21,4 +21,4 @@ def contact(request):
         messages.success(request, "Wiadomość została zapisana")
 
 
-    return render(request, "home/contact.html")
+    return render(request, "home/contact.html", {"current_page": "contact"})

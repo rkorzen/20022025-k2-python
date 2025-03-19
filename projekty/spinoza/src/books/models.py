@@ -37,6 +37,13 @@ class Book(models.Model):
 
 class Review(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200)
+    comment = models.TextField()
+    user = models.ForeignKey("auth.User", on_delete=models.SET_NULL, null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.book}"
 
 
 # book.review_set.all()

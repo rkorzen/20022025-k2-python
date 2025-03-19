@@ -2,26 +2,92 @@
 
 
 {% block content %}
-<h1>{{ book.title }}</h1>
-<p>{{ book.author }}</p>
-<p>{{ book.genre }}</p>
-<p>{{ book.summary }}</p>
-<p>{{ book.isbn }}</p>
-<p>
-{% if request.user.is_authenticated %}
-    {% if book.is_available %}
-    <a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
-    {% else %}
-        {% if book.borrowing_set.last.user == request.user or request.user.is_superuser %}
-            <a class="btn btn-secondary" href="/books/{{ book.id }}/return">Return</a>
-        {% endif %}
-    {% endif %}
-{% endif %}
-</p>
 
-<div>
-<h2>Wypożyczenia</h2>
-<table class="table table-striped">
+
+<div class="row">
+    <div class="col-md-6">
+
+        <h1>{{ book.title }}</h1>
+        <p>{{ book.author }}</p>
+        <p>{{ book.genre }}</p>
+        <p>{{ book.summary }}</p>
+        <p>{{ book.isbn }}</p>
+        <p>
+        {% if request.user.is_authenticated %}
+            {% if book.is_available %}
+            <a class="btn btn-primary" href="/books/{{ book.id }}/borrow">Borrow</a>
+            {% else %}
+                {% if book.borrowing_set.last.user == request.user or request.user.is_superuser %}
+                    <a class="btn btn-secondary" href="/books/{{ book.id }}/return">Return</a>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        {% if request.user.is_superuser %}
+            <h2>Akcje admina</h2>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" value="borrow" name="action">wypożycz dla</button>
+                <select name="user_id">
+                    {% for user in users %}
+                        <option value="{{ user.id }}">{{ user.username }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Dodaj opinię</h2>
+
+        <form method="post">
+            {% csrf_token %}
+
+            {% if request.user.is_authenticated %}
+                <div class="mb-3">
+                    {{ request.user.username }}
+                </div>
+            {% else %}
+                <div class="mb-3">
+                    <label for="name" class="form-label">Imie:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+            {% endif %}
+            <div class="mb-3">
+                <label for="comment" id="content" class="form-label">Opinia:</label>
+                <textarea name="comment" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <h2>Opinie</h2>
+
+            {% for review in book.review_set.all %}
+            <div class="card">
+            <div class="card-header">
+                {% if review.user == request.user %}
+                    <b><i>{{review.user.username}}</i></b>
+                {% elif review.user %}
+                    <b>{{review.user.username}}</b>
+                {% else %} 
+                    {{review.name}}                 
+                {% endif %}
+                <small>{{review.created_at}}</small></div>
+            <div class="card-body">{{review.comment}}</div>
+            </div>
+                
+            {% endfor %}
+
+    </div>
+
+    <div class="col-md-6">
+        <h2>Wypożyczenia</h2>
+        <table class="table table-striped">
     <thead>
         <tr>
             <th>Użytkownik</th>

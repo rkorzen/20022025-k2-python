@@ -83,19 +83,19 @@
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/books/">Books</a>
+            <a class="nav-link {% if current_page == 'books' %}active{% endif %}" aria-current="page" href="/books/">Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/authors/">Authors</a>
+            <a class="nav-link {% if current_page == 'authors' %}active{% endif %}" href="/authors/">Authors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/genres/">Genres</a>
+            <a class="nav-link {% if current_page == 'genres' %}active{% endif %}" href="/genres/">Genres</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
+            <a class="nav-link {% if current_page == 'about' %}active{% endif %}" href="/about/">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact/">Contact</a>
+            <a class="nav-link {% if current_page == 'contact' %}active{% endif %}" href="/contact/">Contact</a>
           </li>
         </ul>
         <form role="search">

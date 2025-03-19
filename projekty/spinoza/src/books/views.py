@@ -1,19 +1,44 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Book, Author, Genre, Borrowing
+from .models import Book, Author, Genre, Borrowing, Review
 from django.utils import timezone
+from django.contrib.auth.models import User
 # Create your views here.
 
 def book_list(request):
     books = Book.objects.all()
-    return render(request, "books/book_list.html", {"books": books})
+    return render(request, "books/book_list.html", {"books": books, "current_page": "books"})
 
 def book_details(request, id):
-    if request.method == "POST":
-        ...
     book = Book.objects.get(id=id)
-    return render(request, "books/book_details.html", {"book": book})
+    users = User.objects.all()
+
+    if request.method == "POST":
+
+        if request.POST.get("action") == "borrow" and request.user.is_superuser:
+            user = User.objects.get(id=request.POST.get("user_id"))
+            if book.is_available:
+                Borrowing.objects.create(user=user, book=book)
+                messages.success(request, "Książka została wypożyczona")
+            else:
+                messages.error(request, "Książka jest niedostępna")
+        elif request.POST.get("action") == "borrow" and not request.user.is_superuser:
+            messages.error(request, "Nie możesz wypożyczać książek")
+        else:
+            review = Review(
+                book=book,
+                name=request.POST.get("name") or request.user.username,
+                comment=request.POST.get("comment"),
+            )
+
+            if request.user.is_authenticated:
+                review.user = request.user
+
+            review.save()
+            messages.success(request, "Opinia została dodana")
+
+    return render(request, "books/book_details.html", {"book": book, "users": users})
 
 @login_required
 def borrow_book(request, id):
@@ -43,11 +68,11 @@ def return_book(request, id):
 
 def author_list(request):
     authors = Author.objects.all()
-    return render(request, "books/author_list.html", {"authors": authors})
+    return render(request, "books/author_list.html", {"authors": authors, "current_page": "authors"})
 
 def genre_list(request):
     genres = Genre.objects.all()
-    return render(request, "books/genre_list.html", {"genres": genres})
+    return render(request, "books/genre_list.html", {"genres": genres, "current_page": "genres"})
 
 def author_details(request, id):
     author = Author.objects.get(id=id)

@@ -151,3 +151,14 @@ tresc
 
     book = Book.objects.first()
     book.review_set.all()
+
+### Dodaj formularze w widokach
+
+/genres/
+/authors/
+
+
+które umożliwią dodawanie pozycji ale tylko przez administratora
+
+
+/books/
