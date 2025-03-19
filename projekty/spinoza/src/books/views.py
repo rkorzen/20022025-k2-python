@@ -4,6 +4,7 @@ from django.contrib import messages
 from .models import Book, Author, Genre, Borrowing, Review
 from django.utils import timezone
 from django.contrib.auth.models import User
+from .forms import GenreForm
 # Create your views here.
 
 def book_list(request):
@@ -71,8 +72,17 @@ def author_list(request):
     return render(request, "books/author_list.html", {"authors": authors, "current_page": "authors"})
 
 def genre_list(request):
+    if request.method == "POST":
+        form = GenreForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Gatunek został dodany")
+        else:
+            messages.error(request, "Nieprawidłowe dane")
+
+    form = GenreForm()
     genres = Genre.objects.all()
-    return render(request, "books/genre_list.html", {"genres": genres, "current_page": "genres"})
+    return render(request, "books/genre_list.html", {"genres": genres, "current_page": "genres", "form": form})
 
 def author_details(request, id):
     author = Author.objects.get(id=id)

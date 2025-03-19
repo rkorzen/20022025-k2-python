@@ -162,3 +162,81 @@ które umożliwią dodawanie pozycji ale tylko przez administratora
 
 
 /books/
+
+## Crispy forms
+
+Instalacja
+
+    uv add crispy-bootstrap5
+
+Dodanie do INSTALLED_APPS w settings.py
+
+
+    "crispy_forms",
+    "crispy_bootstrap5",
+
+oraz na koncu
+
+    # Crispy forms
+    CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+    CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+
+w module forms.py w aplikacji definiujemy formularz (np. oparty o model):
+
+
+    class GenreForm(forms.ModelForm):
+
+        def __init__(self, *args, **kwargs):
+            "to jest czesc z crisp forms - dodaje metode i przycisk" 
+            super().__init__(*args, **kwargs)
+            self.helper = FormHelper()
+            self.helper.form_id = 'id-exampleForm'
+            self.helper.form_class = 'blueForms'
+            self.helper.form_method = 'post'
+            self.helper.add_input(Submit('submit', 'Dodaj'))
+
+        class Meta:
+            model = Genre
+            fields = ["name", "description"]
+
+
+
+jeśli użyliśmy tej metody init
+
+to w szablonie wystarczy zrobic
+
+załadować templatetagi i filtry z crispy
+
+    {% load crispy_forms_tags %}
+
+potem mozemy uzywac crispy do generowania formularza
+
+    {% crispy form %}
+
+
+jeśli tego moe zrobilismy to czesc rzeczy sami musimy w szabloine dodac:
+
+    <form method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-primary">Dodaj</button>
+    </form>
+
+
+w widoku z koleji trzeba formularz wypelnic danymi
+
+Kiedy obslugujemu POST
+
+    form = MyForm(data=request.POST)
+    if form.is_valid():
+        form.save()
+
+Kiedy obslugujemy GET
+
+    form = MyForm()
+
+i trzeba to przekazac do szablony w kontekście
+
+    context = {"form": form}
+    return render(request, "template.html", context)

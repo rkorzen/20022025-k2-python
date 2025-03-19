@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.template.defaultfilters import slugify
+from django.utils.text import slugify as slugify_utils
 
 class Author(models.Model):
     first_name = models.CharField(max_length=200)
@@ -13,12 +14,27 @@ class Author(models.Model):
 
 class Genre(models.Model):
     name = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200)
+    slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
+    
 
+    def save(self, *args, **kwargs):
+        all_slugs = Genre.objects.values_list('slug', flat=True)
+
+        potential_slug = slugify(self.name)
+
+        i = 1
+        while potential_slug in all_slugs:
+            potential_slug = slugify_utils(f"{self.name}-{i}")
+            i += 1
+
+        self.slug = potential_slug
+
+        
+        super().save(*args, **kwargs)
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
