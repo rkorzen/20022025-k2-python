@@ -7,11 +7,11 @@
         <h1>Lista gatunków</h1>
 
         <ul>    
-            {% for genre in genres %}
+            {% for genre in page_obj %}
                 <li><a href="/genres/{{genre.id}}">{{ genre}}</a></li>
             {% endfor %}
         </ul>
-
+        {% include "books/includes/pagination.html" %}
     </div>
     <div class="col-md-6">
         {% if request.user.is_superuser %}

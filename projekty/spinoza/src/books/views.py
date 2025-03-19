@@ -10,6 +10,16 @@ from django.contrib.auth import login
 from django.core.paginator import Paginator
 # Create your views here.
 
+
+def get_pagination_data(request, queryset):
+    page_number = request.GET.get("page", 1)
+    per_page_number = request.GET.get("per_page", 25)
+    per_page_number = int(per_page_number)
+    paginator = Paginator(queryset, per_page_number)
+    
+    page_obj = paginator.get_page(page_number)
+    return page_obj, per_page_number
+
 def book_list(request):
     if request.method == "POST":
         form = BookForm(data=request.POST)
@@ -22,13 +32,8 @@ def book_list(request):
     form = BookForm()
     books = Book.objects.all()
 
-    page_number = request.GET.get("page", 1)
-    per_page_number = request.GET.get("per_page", 25)
-    per_page_number = int(per_page_number)
-    paginator = Paginator(books, per_page_number)
-    
-    page_obj = paginator.get_page(page_number)
-    return render(request, "books/book_list.html", {"books": page_obj, "current_page": "books", "form": form, "per_page_number": per_page_number})
+    page_obj, per_page_number = get_pagination_data(request, books)
+    return render(request, "books/book_list.html", {"page_obj": page_obj, "current_page": "books", "form": form, "per_page_number": per_page_number})
 
 def book_details(request, id):
     book = Book.objects.get(id=id)
@@ -97,7 +102,9 @@ def author_list(request):
 
     form = AuthorForm()        
     authors = Author.objects.all()
-    return render(request, "books/author_list.html", {"authors": authors, "current_page": "authors", "form": form})
+    page_obj, per_page_number = get_pagination_data(request, authors)
+
+    return render(request, "books/author_list.html", {"page_obj": page_obj, "current_page": "authors", "form": form, "per_page_number": per_page_number})
 
 def genre_list(request):
     if request.method == "POST":
@@ -110,7 +117,9 @@ def genre_list(request):
 
     form = GenreForm()
     genres = Genre.objects.all()
-    return render(request, "books/genre_list.html", {"genres": genres, "current_page": "genres", "form": form})
+    page_obj, per_page_number = get_pagination_data(request, genres)
+
+    return render(request, "books/genre_list.html", {"page_obj": page_obj, "current_page": "genres", "form": form, "per_page_number": per_page_number})
 
 def author_details(request, id):
     if request.method == "POST":
@@ -125,7 +134,9 @@ def author_details(request, id):
     form = BookForm()
     
     books = Book.objects.filter(author=author)
-    return render(request, "books/book_list.html", {"author": author, "books": books, "form": form  })
+    page_obj, per_page_number = get_pagination_data(request, books)
+
+    return render(request, "books/book_list.html", {"author": author, "page_obj": page_obj, "form": form, "per_page_number": per_page_number})
 
 def genre_details(request, id):
     if request.method == "POST":
@@ -138,5 +149,6 @@ def genre_details(request, id):
     form = BookForm()
     genre = Genre.objects.get(id=id)
     books = Book.objects.filter(genre=genre)
-    return render(request, "books/book_list.html", {"genre": genre, "books": books, "form": form})
+    page_obj, per_page_number = get_pagination_data(request, books)
+    return render(request, "books/book_list.html", {"genre": genre, "page_obj": page_obj, "form": form, "per_page_number": per_page_number})
 

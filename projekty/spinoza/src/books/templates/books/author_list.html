@@ -7,10 +7,11 @@
         <h1>Lista Autorów</h1>
 
         <ul>    
-            {% for author in authors %}
+            {% for author in page_obj %}
                 <li><a href="/authors/{{author.id}}">{{ author }}</a></li>
             {% endfor %}
         </ul>
+        {% include "books/includes/pagination.html" %}
 
     </div>
     <div class="col-md-6">
