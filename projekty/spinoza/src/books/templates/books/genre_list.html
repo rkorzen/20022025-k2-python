@@ -16,11 +16,6 @@
     <div class="col-md-6">
         {% if request.user.is_superuser %}
             <h1>Dodaj gatunek</h1>
-            <form method="post">
-                {% csrf_token %}
-                {{form|crispy}}
-                <button type="submit" class="btn btn-primary">Dodaj</button>
-            </form>
 
             {% crispy form%}
         {% endif %}

@@ -240,3 +240,11 @@ i trzeba to przekazac do szablony w kontekście
 
     context = {"form": form}
     return render(request, "template.html", context)
+
+## synchronizacja zależności 
+
+    pip install faker
+
+lub
+
+    uv sync

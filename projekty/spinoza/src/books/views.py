@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from .forms import GenreForm, AuthorForm, BookForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login
+from django.core.paginator import Paginator
 # Create your views here.
 
 def book_list(request):
@@ -20,7 +21,14 @@ def book_list(request):
 
     form = BookForm()
     books = Book.objects.all()
-    return render(request, "books/book_list.html", {"books": books, "current_page": "books", "form": form})
+
+    page_number = request.GET.get("page", 1)
+    per_page_number = request.GET.get("per_page", 25)
+    per_page_number = int(per_page_number)
+    paginator = Paginator(books, per_page_number)
+    
+    page_obj = paginator.get_page(page_number)
+    return render(request, "books/book_list.html", {"books": page_obj, "current_page": "books", "form": form, "per_page_number": per_page_number})
 
 def book_details(request, id):
     book = Book.objects.get(id=id)
@@ -105,24 +113,30 @@ def genre_list(request):
     return render(request, "books/genre_list.html", {"genres": genres, "current_page": "genres", "form": form})
 
 def author_details(request, id):
+    if request.method == "POST":
+        form = BookForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Książka została dodana")
+        else:
+            messages.error(request, "Nieprawidłowe dane")
+
     author = Author.objects.get(id=id)
+    form = BookForm()
+    
     books = Book.objects.filter(author=author)
-    return render(request, "books/book_list.html", {"author": author, "books": books})
+    return render(request, "books/book_list.html", {"author": author, "books": books, "form": form  })
 
 def genre_details(request, id):
+    if request.method == "POST":
+        form = BookForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Książka została dodana")
+        else:
+            messages.error(request, "Nieprawidłowe dane")
+    form = BookForm()
     genre = Genre.objects.get(id=id)
     books = Book.objects.filter(genre=genre)
-    return render(request, "books/book_list.html", {"genre": genre, "books": books})
-
-def login_view(request):
-    if request.method == 'POST':
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('home')  # lub inna strona po zalogowaniu
-    else:
-        form = AuthenticationForm()
-    
-    return render(request, 'registration/login.html', {'form': form})
+    return render(request, "books/book_list.html", {"genre": genre, "books": books, "form": form})
 
