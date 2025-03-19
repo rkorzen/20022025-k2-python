@@ -10,6 +10,8 @@ def book_list(request):
     return render(request, "books/book_list.html", {"books": books})
 
 def book_details(request, id):
+    if request.method == "POST":
+        ...
     book = Book.objects.get(id=id)
     return render(request, "books/book_details.html", {"book": book})
 

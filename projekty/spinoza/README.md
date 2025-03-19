@@ -120,3 +120,34 @@ coverage html
 Trzeba otworzyć plik index.html w katalogu htmlcov w przeglądarce
 
 
+## Budowa URL
+
+protokol://domena/path/?querystring
+http://127.0.0.1:8000/contact/?name=Rafa%C5%82&email=korzeniewski%40gmail.com&message=sdsdsdsdsd#id-obiektu
+
+
+
+## zadanie - dodanie komentarza do ksiazki:
+
+bazujac na tym co mamy w contact dodaj mozliwosc dodawania komentarza do ksiazki.
+Poki co komentarz moze dodac kazdy uzytkownik - zalogowany czy nie.
+
+Podaje imie i tresc.
+
+wyswietla sie to tak, ze komentarze wystepuja jeden pod drugim podajac: 
+
+Imie
+data
+
+tresc
+
+
+    class Book(models.Model):
+        ...
+
+    class Review(models.Model):
+        book = models.ForeignKey(Book, on_delete=models.CASCADE)
+        ...
+
+    book = Book.objects.first()
+    book.review_set.all()

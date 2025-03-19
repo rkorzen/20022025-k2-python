@@ -35,7 +35,11 @@ class Book(models.Model):
         # sprawdź czy istnieje wypożyczenie, które nie zostało zwrócone
         return not self.borrowing_set.last().return_date is None if self.borrowing_set.last() else True
 
+class Review(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
 
+
+# book.review_set.all()
 
 
 class Borrowing(models.Model):
