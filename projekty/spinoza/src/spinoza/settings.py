@@ -59,6 +59,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "spinoza.middleware.RequestLoggingMiddleware",
 ]
 
 ROOT_URLCONF = "spinoza.urls"
@@ -75,6 +76,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "books.context_processors.library_stats",
+                "blog.context_processor.blog_stats",
             ],
         },
     },
@@ -139,3 +141,25 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Crispy forms
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+
+# Logging
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "spinoza.log",
+        },
+    },
+    "loggers": {
+        "spinoza.middleware": {
+            "handlers": ["file"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+    },  
+}   

@@ -278,3 +278,13 @@ lub
 ## Dodanie context procesora dla Postow
 
 wypisz w stopce ile jest wszystkich postow i wypisz 3 tytuly postow z najwieksza liczba komentarzy
+
+
+## middleware
+
+Dodaj middleware który doda do response nagłówek jak niżej:
+
+response["X-Process-Time"] = czas wykonania
+
+
+
