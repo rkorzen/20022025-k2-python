@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "home.apps.HomeConfig",
     "blog.apps.BlogConfig",
     "tags.apps.TagsConfig",
+    "async_example.apps.AsyncExampleConfig",
 
 ]
 

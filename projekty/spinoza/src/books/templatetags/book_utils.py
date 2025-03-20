@@ -20,6 +20,10 @@ def remove_newlines(text):
     """
     return text.replace("\\n","")
 
+@register.filter(name="first_words")
+def first_words(text, num):
+    return " ".join(text.split()[:num]) + "..."
+
 @register.simple_tag
 def markdown_tag(text):
     return mark_safe(markdown.markdown(text.replace("\\n","")))

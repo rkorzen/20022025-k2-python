@@ -1013,3 +1013,927 @@ Request zakończony:
                     Status code: 200
                     Czas wykonania: 0.00 sekund
         
+Nowy request:
+                    datetime: 2025-03-20 14:38:15.594393+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:15.668439+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:16.405395+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:16.457661+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:17.631725+00:00
+                    Path: /blog/posts/f/6
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/6
+                    Status code: 500
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:57.881203+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:57.934205+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:58.727409+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:58.772721+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:59.036689+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:59.131359+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:59.705636+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:59.763992+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:38:59.940922+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:07.252281+00:00
+                    Path: /admin/blog/post/6/change/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/blog/post/6/change/
+                    Status code: 200
+                    Czas wykonania: 0.09 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:07.401757+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:37.427411+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:37.508278+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:38.359220+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:38.412384+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:38.650160+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:38.722523+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:43.434858+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:39:43.482756+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:20.976496+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 500
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:21.904960+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 500
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:33.666634+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:33.738959+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:59.673651+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:40:59.737029+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:00.627306+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:00.671799+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:00.921114+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:00.984816+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.025684+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.071809+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.345252+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.409324+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.529940+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.609275+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.703384+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:01.774328+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:07.417170+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:07.495184+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.270557+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.322930+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.436364+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.522936+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.578572+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:08.654738+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:19.056350+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:19.116727+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:29.672811+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:41:29.727652+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:54:57.823466+00:00
+                    Path: /
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /
+                    Status code: 200
+                    Czas wykonania: 3.76 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:55:01.633798+00:00
+                    Path: /navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:55:20.445214+00:00
+                    Path: /api/sync-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/sync-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.43 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:55:20.925968+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:55:33.674606+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 500
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:02.386641+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.35 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:02.770990+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:06.389637+00:00
+                    Path: /api/sync-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/sync-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.42 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:06.843039+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:07.543086+00:00
+                    Path: /api/sync-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/sync-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.42 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:07.996083+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:08.484720+00:00
+                    Path: /api/sync-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/sync-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.39 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:08.908141+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:11.208768+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.11 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:11.355695+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:11.909436+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.09 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:12.030699+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:12.587195+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.10 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:12.713330+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:13.261025+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.10 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:13.387810+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:14.146971+00:00
+                    Path: /api/async-fetch-example/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/async-fetch-example/
+                    Status code: 200
+                    Czas wykonania: 0.11 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:56:14.281713+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        

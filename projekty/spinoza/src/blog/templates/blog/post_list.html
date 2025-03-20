@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load book_utils %}
 {% block content %}
 
 
@@ -9,7 +10,7 @@
 
         {% for post in object_list %}
         <!-- /posts/f/1    albo /posts/c/1 -w zależności od current_page -->
-        <h2><a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ post.id }}">{{ post.title }}</a></h2>
+        <h2><a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ post.id }}">{{ post.title }} (<small>{{ post.body|first_words:5 }})</small></a></h2>
         
         {% endfor %}
         <a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/add/" class="btn btn-primary">Dodaj post</a>

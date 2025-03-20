@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-{% load blog_extras %}
+{% load blog_utils %}
 {% block content %}
 
-<h1>{{ object.title }} {{ object.body|first_words:5 }}</h1>
+<h1>{{ object.title }} </h1>
 <p>Author: {{ object.user }}</p>
 <p>{{ object.body }}</p>
 

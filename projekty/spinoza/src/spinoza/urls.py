@@ -26,4 +26,5 @@ urlpatterns = [
     path("", include("home.urls")),
     path("accounts/", include("accounts.urls")),
     path("blog/", include("blog.urls")),
+    path("api/", include("async_example.urls")),
 ]
