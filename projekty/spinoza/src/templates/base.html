@@ -92,6 +92,12 @@
             <a class="nav-link {% if current_page == 'genres' %}active{% endif %}" href="/genres/">Genres</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link {% if current_page == 'posts_f' %}active{% endif %}" href="{% url 'post_list_f' %}">Posty (F)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if current_page == 'posts_c' %}active{% endif %}" href="{% url 'post_list_c' %}">Posty (C)</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link {% if current_page == 'about' %}active{% endif %}" href="/about/">About</a>
           </li>
           <li class="nav-item">
