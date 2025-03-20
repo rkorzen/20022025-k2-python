@@ -4,6 +4,7 @@ from .views import post_detail, PostDetailView
 from .views import post_add, PostCreateView
 from .views import post_edit, PostUpdateView
 from .views import post_delete, PostDeleteView
+from .views import post_add_comment, CommentCreateView
 
 urlpatterns = [
 
@@ -28,8 +29,8 @@ urlpatterns = [
     path("posts/c/<int:pk>/delete/", PostDeleteView.as_view(), name="post_delete_c"),
 
     # add comment
-    path("posts/f/<int:pk>/add-comment/", post_add_comment, name="add_comment"),
-    # path("posts/c/<int:pk>/add-comment/", post_add_comment, name="post_add_comment"),
-    # path("posts/c/<int:pk>/add-comment/", PostAddCommentView.as_view(), name="post_add_comment_c"),
+    path("posts/f/<int:pk>/add-comment/", post_add_comment, name="add_comment_f"),
+    path("posts/c/<int:pk>/add-comment/", CommentCreateView.as_view(), name="add_comment_c"),
+
 
 ]

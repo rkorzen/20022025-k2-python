@@ -19,7 +19,23 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-    
+
+
+class Comment(models.Model):
+
+    STATUS_CHOICES = [
+        ("draft", "Draft"),
+        ("published", "Published"),
+        ("rejected", "Rejected"),
+    ]
+
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.CharField(max_length=15, choices=STATUS_CHOICES, default="draft")
+
 # Dodaj model Comment - który jest powiązany z modelem Post i Author.
 # Komentarz ma mieć pola:
 # - content - tekst komentarza

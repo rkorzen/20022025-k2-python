@@ -39,17 +39,7 @@ class AuthorForm(BooksGenericForm):
 class BookForm(BooksGenericForm):
     class Meta:
         model = Book
-        fields = ['title', 'author', 'isbn', ...]
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Pojedyncze pole
-        self.fields['isbn'].disabled = True
-        
-        # Lub wiele pól na raz
-        disabled_fields = ['isbn', 'author', 'published_date']
-        for field_name in disabled_fields:
-            self.fields[field_name].disabled = True
+        fields = "__all__"
 
 
 class CustomAuthenticationForm(AuthenticationForm):
