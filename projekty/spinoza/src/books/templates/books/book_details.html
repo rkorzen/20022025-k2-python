@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load book_utils %}
 
 {% block content %}
 
@@ -10,7 +10,8 @@
         <h1>{{ book.title }}</h1>
         <p>{{ book.author }}</p>
         <p>{{ book.genre }}</p>
-        <p>{{ book.summary }}</p>
+        <p>{{ book.summary|remove_newlines|markdown_filter }}</p>
+        <p>{% markdown_tag book.summary %}</p>
         <p>{{ book.isbn }}</p>
         <p>
         {% if request.user.is_authenticated %}

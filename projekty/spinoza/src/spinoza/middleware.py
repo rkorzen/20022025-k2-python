@@ -49,3 +49,24 @@ class RequestLoggingMiddleware:
         # the view is called.
 
         return response
+    
+
+def process_time(get_response):
+# One-time configuration and initialization.
+
+    def middleware(request):
+        # Code to be executed for each request before
+        # the view (and later middleware) are called.
+
+        start_time = time.time()
+        
+        response = get_response(request)
+        
+        response["X-Process-Time"] = time.time() - start_time
+
+        # Code to be executed for each request/response after
+        # the view is called.
+
+        return response
+
+    return middleware

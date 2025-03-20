@@ -173,3 +173,843 @@ Request zakończony:
                     Status code: 404
                     Czas wykonania: 0.01 sekund
         
+Nowy request:
+                    datetime: 2025-03-20 13:43:20.753674+00:00
+                    Path: /contact/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /contact/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 13:43:20.858983+00:00
+                    Path: /contact/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /contact/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 13:44:06.766966+00:00
+                    Path: /about/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /about/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 13:44:06.893765+00:00
+                    Path: /about/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /about/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 13:44:06.974278+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:04:06.403607+00:00
+                    Path: /admin/books/book/1/change/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/1/change/
+                    Status code: 200
+                    Czas wykonania: 0.07 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:04:06.560724+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:04:06.632964+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:36.117848+00:00
+                    Path: /admin/books/book/1/change/
+                    Method: POST
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/1/change/
+                    Status code: 302
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:36.133406+00:00
+                    Path: /admin/books/book/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/
+                    Status code: 200
+                    Czas wykonania: 0.17 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:36.363470+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:36.454614+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:37.544195+00:00
+                    Path: /admin/books/book/2/change/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/2/change/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:37.623019+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:37.665561+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:41.487280+00:00
+                    Path: /admin/books/book/2/change/
+                    Method: POST
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/2/change/
+                    Status code: 302
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:41.503307+00:00
+                    Path: /admin/books/book/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/
+                    Status code: 200
+                    Czas wykonania: 0.17 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:41.721492+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:45.850785+00:00
+                    Path: /books/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:45.948357+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:47.178658+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:47.261444+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:55.864602+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:06:55.948873+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:50.838883+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:50.895662+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:51.602472+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:51.667134+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:54.767161+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:07:54.855722+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:08:11.789809+00:00
+                    Path: /admin/books/book/2/change/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/book/2/change/
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:08:11.894743+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:10:08.518422+00:00
+                    Path: /books/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:10:08.648062+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:10:09.960411+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:10:10.049469+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:13:50.801072+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 500
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:30.075165+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:30.191517+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:40.786101+00:00
+                    Path: /books/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:40.908580+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:42.271966+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:14:42.367023+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:16:57.008327+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 500
+                    Czas wykonania: 0.06 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:18:56.919657+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:18:57.025967+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:20:23.575453+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:20:23.658179+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:20:34.089066+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:20:34.179970+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:22:24.601999+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 500
+                    Czas wykonania: 0.08 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:04.961876+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:05.049933+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:11.291508+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:11.378143+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:36.840237+00:00
+                    Path: /books/2
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/2
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:36.963766+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:39.547323+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:23:39.628764+00:00
+                    Path: /books/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:22.714654+00:00
+                    Path: /blog/posts/f/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:22.820717+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:27.527513+00:00
+                    Path: /blog/posts/f/6
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/6
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:27.648875+00:00
+                    Path: /blog/posts/f/navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /blog/posts/f/navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:34.551439+00:00
+                    Path: /admin/blog/post/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/blog/post/
+                    Status code: 200
+                    Czas wykonania: 0.06 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:34.677768+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:38.434598+00:00
+                    Path: /admin/blog/post/6/change/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/blog/post/6/change/
+                    Status code: 200
+                    Czas wykonania: 0.08 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:26:38.577302+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:27:04.645725+00:00
+                    Path: /admin/blog/post/6/change/
+                    Method: POST
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/blog/post/6/change/
+                    Status code: 302
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:27:04.672940+00:00
+                    Path: /admin/blog/post/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/blog/post/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-20 14:27:04.754323+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        

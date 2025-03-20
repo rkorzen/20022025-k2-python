@@ -60,6 +60,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "spinoza.middleware.RequestLoggingMiddleware",
+    "spinoza.middleware.process_time",
 ]
 
 ROOT_URLCONF = "spinoza.urls"

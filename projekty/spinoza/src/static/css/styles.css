@@ -1,0 +1,13 @@
+.highlight {
+    background-color: yellow;
+    padding: 2px;
+}
+
+.rating .star {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.rating .star.filled {
+    color: gold;
+} 
