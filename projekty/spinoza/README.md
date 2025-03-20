@@ -286,5 +286,7 @@ Dodaj middleware który doda do response nagłówek jak niżej:
 
 response["X-Process-Time"] = czas wykonania
 
-
+1. w pliku middleware.py dodaj nowy middleware
+2. dodaj go do settings.py
+3. sprawdz czy dziala w przegladarce np. 
 
