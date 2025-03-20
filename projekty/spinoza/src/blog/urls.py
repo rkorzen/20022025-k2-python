@@ -27,4 +27,9 @@ urlpatterns = [
     path("posts/f/<int:pk>/delete/", post_delete, name="post_delete_f"),
     path("posts/c/<int:pk>/delete/", PostDeleteView.as_view(), name="post_delete_c"),
 
+    # add comment
+    path("posts/f/<int:pk>/add-comment/", post_add_comment, name="add_comment"),
+    # path("posts/c/<int:pk>/add-comment/", post_add_comment, name="post_add_comment"),
+    # path("posts/c/<int:pk>/add-comment/", PostAddCommentView.as_view(), name="post_add_comment_c"),
+
 ]

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "books.apps.BooksConfig",
     "home.apps.HomeConfig",
     "blog.apps.BlogConfig",
+    "tags.apps.TagsConfig",
 
 ]
 

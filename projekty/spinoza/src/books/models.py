@@ -38,11 +38,13 @@ class Genre(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name="books")
     genre = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True)
     summary = models.TextField(help_text="Enter a brief description of the book", blank=True)
     isbn = models.CharField(max_length=13, help_text="13 Character ISBN number", blank=True, null=True)
- 
+    tags = models.ManyToManyField("tags.Tag", blank=True, related_name="books")
+
+
     def __str__(self):
         return f"{self.title} ({self.author})"
     
@@ -50,6 +52,10 @@ class Book(models.Model):
     def is_available(self):
         # sprawdź czy istnieje wypożyczenie, które nie zostało zwrócone
         return not self.borrowing_set.last().return_date is None if self.borrowing_set.last() else True
+    
+
+    class Meta:
+        ordering = ["id"]
 
 class Review(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)

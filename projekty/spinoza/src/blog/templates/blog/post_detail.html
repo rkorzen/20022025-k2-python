@@ -6,6 +6,18 @@
 <p>Author: {{ object.user }}</p>
 <p>{{ object.body }}</p>
 
+<h2>Comments</h2>
+...
+
+
+<h3>Add Comment</h3>
+<form method="post" action="{% url 'add_comment' object.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Comment</button>
+</form>
+
+
 
 <a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ object.id }}/edit/" class="btn btn-primary">Edit</a>
 <a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ object.id }}/delete/" class="btn btn-danger">Delete</a>
