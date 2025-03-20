@@ -267,3 +267,14 @@ lub
     #  Wyslanie formularza powinno wysylac request metodą POST do widoku /blog/post/<pk>/add-comment/
     #  po utworzeniu komentarza wracamy na widok szzegolow danego posta i komentarz powinien byc widoczny pod postem.
     #  Dodaj w Paneu admina mozliwosc moderowania komentarzy - Inline do postu.
+
+
+## Dodaj customowe akcje w PA:
+
+- ustawienie statusu wybranych komentarzy na published, rejected, draft
+- analogicznei dla postów (zgodnie z status choices)
+
+
+## Dodanie context procesora dla Postow
+
+wypisz w stopce ile jest wszystkich postow i wypisz 3 tytuly postow z najwieksza liczba komentarzy

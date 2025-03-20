@@ -18,7 +18,13 @@ class GenreAdmin(admin.ModelAdmin):
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("title", "author", "genre", "is_available")
+
+    def is_available(self, obj):
+        return obj.is_available
+
+    is_available.boolean = True
+    is_available.short_description = "Czy dostępna"
 
 
 @admin.register(Borrowing)
