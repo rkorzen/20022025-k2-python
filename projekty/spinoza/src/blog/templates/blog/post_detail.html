@@ -3,5 +3,10 @@
 {% block content %}
 
 <h1>{{ object.title }}</h1>
+<p>Author: {{ object.user }}</p>
 <p>{{ object.body }}</p>
+
+
+<a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ object.id }}/edit/" class="btn btn-primary">Edit</a>
+<a href="/blog/posts/{% if current_page == 'posts_f' %}f{% else %}c{% endif %}/{{ object.id }}/delete/" class="btn btn-danger">Delete</a>
 {% endblock %}

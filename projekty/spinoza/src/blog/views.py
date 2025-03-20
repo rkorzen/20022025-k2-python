@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm
 from django.utils.text import slugify
 from django.urls import reverse_lazy
-
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib import messages
 # Create your views here.
 
 def post_list(request):
@@ -46,9 +48,8 @@ class PostListView(ListView):
         return super().post(request, *args, **kwargs)
 
 
-
-def post_detail(request, id):
-    post = get_object_or_404(Post, id=id, status="published")
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk, status="published")
     return render(request, "blog/post_detail.html", {"object": post, "current_page": "posts_f"})
 
 
@@ -64,6 +65,7 @@ class PostDetailView(DetailView):
         return Post.objects.filter(status="published")
 
 
+@login_required
 def post_add(request):
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -79,7 +81,8 @@ def post_add(request):
     return render(request, "blog/post_form.html", {"current_page": "posts_f", "form": form})
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
+    
     model = Post
     form_class = PostForm
     success_url = reverse_lazy("post_list_c")
@@ -88,3 +91,55 @@ class PostCreateView(CreateView):
         form.instance.user = self.request.user
         form.instance.slug = slugify(form.instance.title)
         return super().form_valid(form)
+    
+
+@login_required
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            form.save()
+            return redirect("post_detail_c", pk=pk)
+    
+    if post.user != request.user:
+        messages.error(request, "Nie jesteś autorem tego posta")
+        return redirect("post_detail_f", pk=pk)
+    
+    form = PostForm(instance=post)
+    return render(request, "blog/post_form.html", {"form": form, "current_page": "posts_f"})
+
+
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Post
+    form_class = PostForm
+    success_url = reverse_lazy("post_list_c")
+
+
+    def test_func(self):
+        post = self.get_object()
+        if post.user == self.request.user:
+            return True
+        messages.error(self.request, "Nie jesteś autorem tego posta")
+        return redirect("post_detail_f", pk=post.pk)
+    
+
+@login_required
+def post_delete(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if post.user != request.user:
+        messages.error(request, "Nie jesteś autorem tego posta")
+        return redirect("post_detail_f", pk=pk)
+    if request.method == "POST":
+        post.delete()
+        return redirect("post_list_c")
+    return render(request, "blog/post_confirm_delete.html", {"object": post})
+
+
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Post
+    success_url = reverse_lazy("post_list_c")
+
+    def test_func(self):
+        post = self.get_object()
+        return post.user == self.request.user
