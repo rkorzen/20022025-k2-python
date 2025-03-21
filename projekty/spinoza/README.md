@@ -295,3 +295,13 @@ response["X-Process-Time"] = czas wykonania
 ## Dodanie serializerow
 
 Dodaj serializery oparte o model dla modeli Author i Genre z aplikacji books
+
+
+## Dodaj widoki funkcyjne tak by obslugiwaly koncowki:
+
+GET /api/v1/genres - lista gatunkiw
+POST /api/v1/genres - dodanie nowego
+
+GET /api/v1/authors - lista autorow
+POST /api/v1/authors - dodanie nowego
+
