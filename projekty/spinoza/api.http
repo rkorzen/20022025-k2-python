@@ -88,6 +88,7 @@ GET http://localhost:8000/api/v1/snippets/
 
 POST http://localhost:8000/api/v1/snippets/ 
 Content-Type: application/json
+Authorization: Basic rkorzen:123
 
 {
     "code": "x=1"

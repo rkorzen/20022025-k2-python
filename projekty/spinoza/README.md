@@ -330,3 +330,6 @@ Na podstawie snippets/views.py oraz snippets/urls.py zrób zmiany w books/api_vi
 
 Na podstawie snippets/views.py popraw books/api_views.py  tak by korzystać z mixinów
 
+...
+
+https://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/

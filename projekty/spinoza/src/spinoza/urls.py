@@ -28,4 +28,5 @@ urlpatterns = [
     path("api/", include("async_example.urls")),
     path("api/v1/", include("snippets.urls")),
     path("api/v1/", include("books.api_urls")),
+    path("api-auth/", include("rest_framework.urls")),
 ]
