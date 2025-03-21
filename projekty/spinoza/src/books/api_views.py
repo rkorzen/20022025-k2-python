@@ -1,88 +1,88 @@
-from django.http import JsonResponse, HttpResponse
-from rest_framework.parsers import JSONParser
-from django.views.decorators.csrf import csrf_exempt
+
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 from .models import Genre, Author
 from .serializers import GenreSerializer, AuthorSerializer
 
-@csrf_exempt
-def genre_list(request):
+@api_view(["GET", "POST"])
+def genre_list(request, format=None):
 
     if request.method == "GET":
         genres = Genre.objects.all()
         serializer = GenreSerializer(genres, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
     
     elif request.method == "POST":
-        data = JSONParser().parse(request)
-        serializer = GenreSerializer(data=data)
+        serializer = GenreSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
 
 
     
-@csrf_exempt
-def genre_detail(request, pk):
+@api_view(["GET", "PUT", "DELETE"])
+def genre_detail(request, pk, format=None):
 
     genre = Genre.objects.get(pk=pk)
 
     if request.method == "GET":
         serializer = GenreSerializer(genre)
-        return JsonResponse(serializer.data)
+        return Response(serializer.data)
 
     elif request.method == "PUT":
-        data = JSONParser().parse(request)
-        serializer = GenreSerializer(instance=genre, data=data)
+        
+        serializer = GenreSerializer(instance=genre, data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
 
     elif request.method == "DELETE":
         genre.delete()
-        return HttpResponse(status=204)
+        return Response(status=204)
 
 
-@csrf_exempt
-def author_list(request):
+@api_view(["GET", "POST"])
+def author_list(request, format=None):
 
     if request.method == "GET":
         authors = Author.objects.all()
         serializer = AuthorSerializer(authors, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
     
     elif request.method == "POST":
-        data = JSONParser().parse(request)
-        serializer = AuthorSerializer(data=data)
+        
+        serializer = AuthorSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
 
 
-@csrf_exempt
-def author_detail(request, pk):
+@api_view(["GET", "PUT", "PATCH", "DELETE"])
+def author_detail(request, pk,  format=None):
 
     try:
         author = Author.objects.get(pk=pk)
     except Author.DoesNotExist:
-        return HttpResponse(status=404)
+        return Response(status=404)
 
     if request.method == "GET":
         serializer = AuthorSerializer(author)
-        return JsonResponse(serializer.data)
+        return Response(serializer.data)
 
     elif request.method == "PUT":
-        data = JSONParser().parse(request)
-        serializer = AuthorSerializer(instance=author, data=data)
+        
+        serializer = AuthorSerializer(instance=author, data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
     
     elif request.method == "PATCH":
-        data = JSONParser().parse(request)
+        data = dict(request.data)
         
         data["first_name"] = data.get("first_name", author.first_name)
         data["last_name"] = data.get("last_name", author.last_name)
@@ -93,12 +93,12 @@ def author_detail(request, pk):
 
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
 
     elif request.method == "DELETE":
         author.delete()
-        return HttpResponse(status=204)
+        return Response(status=204)
 
     else:
-        return HttpResponse(status=405)
+        return Response(status=405)

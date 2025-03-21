@@ -2897,3 +2897,87 @@ Request zakończony:
                     Status code: 201
                     Czas wykonania: 0.02 sekund
         
+Nowy request:
+                    datetime: 2025-03-21 11:32:21.988440+00:00
+                    Path: /api/v1/authors/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/
+                    Status code: 200
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:32:22.160175+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:32:31.090249+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 500
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:32:55.420970+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.05 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:33:00.248274+00:00
+                    Path: /api/v1/genres/1
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:33:00.261873+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 11:33:17.447738+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PATCH
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        

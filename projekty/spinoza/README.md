@@ -320,3 +320,5 @@ efekt:
 jesli w przegladarce wejdziemy na
 
 http://127.0.0.1:8000/api/v1/authors/  - to mamy mieć browsable API a nie czysty JSON
+
+Do 12:25

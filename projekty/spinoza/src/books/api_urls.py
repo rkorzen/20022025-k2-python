@@ -1,4 +1,7 @@
 from django.urls import path
+
+from rest_framework.urlpatterns import format_suffix_patterns
+
 from .api_views import genre_list, author_list, genre_detail, author_detail
 
 urlpatterns = [
@@ -8,3 +11,5 @@ urlpatterns = [
     path("authors/<int:pk>/", author_detail),
 
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
