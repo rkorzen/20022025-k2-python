@@ -12,6 +12,32 @@ Content-Type: application/json
     "date_of_birth": "1956-01-01"
 }
 
+###
+GET http://localhost:8000/api/v1/authors/16/
+
+###
+
+PUT http://localhost:8000/api/v1/authors/16/
+Content-Type: application/json
+
+{
+    "first_name": "Sigma",
+    "last_name": "Pi",
+    "date_of_birth": "1956-01-01"
+}
+
+###
+
+PATCH http://localhost:8000/api/v1/authors/16/
+Content-Type: application/json
+
+{
+    "date_of_birth": "1956-01-02"
+}
+
+###
+
+DELETE http://localhost:8000/api/v1/authors/17/
 
 ###
 

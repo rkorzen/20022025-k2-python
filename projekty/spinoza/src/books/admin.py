@@ -10,6 +10,7 @@ class BookInline(admin.TabularInline):
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
+    list_display = ["id", "first_name", "last_name"]
     inlines = [BookInline]
 
 @admin.register(Genre)

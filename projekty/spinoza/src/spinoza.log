@@ -2345,3 +2345,267 @@ Request zakończony:
                     Status code: 201
                     Czas wykonania: 0.00 sekund
         
+Nowy request:
+                    datetime: 2025-03-21 10:35:45.809476+00:00
+                    Path: /api/v1/authors/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/1/
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:02.817736+00:00
+                    Path: /admin/books/author/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/author/
+                    Status code: 200
+                    Czas wykonania: 0.07 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:02.943862+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:05.510934+00:00
+                    Path: /admin/books/author/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/author/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:05.581685+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:43.421245+00:00
+                    Path: /admin/books/author/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/books/author/
+                    Status code: 200
+                    Czas wykonania: 0.06 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:36:43.518259+00:00
+                    Path: /admin/jsi18n/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /admin/jsi18n/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:37:32.251381+00:00
+                    Path: /api/v1/authors/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/1/
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:38:10.492853+00:00
+                    Path: /api/v1/authors/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:38:21.228281+00:00
+                    Path: /api/v1/authors/10/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/10/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:38:23.697762+00:00
+                    Path: /api/v1/authors/10/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/10/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:38:38.422271+00:00
+                    Path: /api/v1/authors/17/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/17/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:38:56.903094+00:00
+                    Path: /api/v1/authors/17/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/17/
+                    Status code: 204
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:39:17.139871+00:00
+                    Path: /api/v1/authors/17/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/17/
+                    Status code: 500
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:40:20.008026+00:00
+                    Path: /api/v1/authors/17/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/17/
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:40:29.109360+00:00
+                    Path: /api/v1/authors/16/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:41:21.567922+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 400
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:41:34.888492+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:42:08.773678+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PATCH
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 500
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:43:06.110590+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PATCH
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 405
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:43:48.500952+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PATCH
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 400
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 10:46:05.816217+00:00
+                    Path: /api/v1/authors/16/
+                    Method: PATCH
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/authors/16/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
