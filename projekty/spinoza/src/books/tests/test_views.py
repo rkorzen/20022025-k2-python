@@ -53,7 +53,7 @@ class BookViewsTest(TestCase):
 
         self.assertContains(response,f"<td>{borrowing.user.username}</td>")
         self.assertContains(response,f"<td>{formatted_date}</td>")
-        self.assertContains(response,f"<td>None</td>")
+        self.assertContains(response,"<td>None</td>")
 
 
     def test_borrow_book_that_is_already_borrowed(self):

@@ -2981,3 +2981,1539 @@ Request zakończony:
                     Status code: 200
                     Czas wykonania: 0.00 sekund
         
+Nowy request:
+                    datetime: 2025-03-21 12:49:29.019053+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:30.984621+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:31.654253+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:32.308757+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:32.967790+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:32.970785+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:33.633080+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:33.635779+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:34.292886+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:34.293651+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:54.047141+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:54.724151+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:55.386171+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:56.052220+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:56.056138+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:56.730042+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:56.732944+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:57.394691+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:49:57.395452+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:48.773517+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:48.778344+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:48.781642+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:50.743623+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:51.415307+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:52.071946+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:52.731110+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:52.734272+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:53.400719+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:53.404400+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:54.075170+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:53:54.075965+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:35.036808+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:35.042140+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:35.045502+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:37.019962+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:37.692220+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:38.353599+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:39.023014+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:39.026082+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:39.698613+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:39.701635+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:40.370937+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:56:40.371761+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:46.896562+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:46.900490+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:46.903259+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:48.863587+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:49.529851+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:50.185236+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:50.846600+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:50.849816+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:51.511482+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:51.514215+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:52.178166+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 12:57:52.178954+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:27.182953+00:00
+                    Path: /api/v1/genres/1/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:27.188964+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:27.192156+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:27.194888+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:29.163796+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:29.836761+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:30.493736+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:31.155609+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:31.159131+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:31.830409+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:31.833249+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:32.499914+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:03:32.500685+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:03.511786+00:00
+                    Path: /api/v1/genres/1/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:03.516596+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:03.520237+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:03.523242+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:05.508206+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:06.186054+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:06.853433+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:07.519286+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:07.522291+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:08.199813+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:08.202505+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:08.867333+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:05:08.868124+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:44.157149+00:00
+                    Path: /api/v1/genres/1/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:44.161997+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:44.165324+00:00
+                    Path: /api/v1/genres/1/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 415
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:44.168475+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:44.171869+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:46.139125+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:46.812283+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:47.473057+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:48.136635+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:48.140358+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:48.813030+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:48.816477+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:49.489118+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:07:49.489926+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:10.098407+00:00
+                    Path: /api/v1/genres/1/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:10.103607+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:10.106880+00:00
+                    Path: /api/v1/genres/1/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:10.112046+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:10.114996+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:12.131426+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:12.835711+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:13.517222+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:14.197396+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:14.200687+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:14.890807+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:14.894090+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:15.597480+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:09:15.598297+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:10:27.909450+00:00
+                    Path: /api/v1/genre/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genre/1
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:10:37.327710+00:00
+                    Path: /api/v1/genre/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genre/1/
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:10:38.742842+00:00
+                    Path: /api/v1/genre/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genre/1/
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:10:44.469354+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:11:22.032642+00:00
+                    Path: /api/v1/genres/1/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:41.267775+00:00
+                    Path: /api/v1/genres/1/
+                    Method: DELETE
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 204
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:41.272621+00:00
+                    Path: /api/v1/genres/1/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:41.275732+00:00
+                    Path: /api/v1/genres/1/
+                    Method: PUT
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/1/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:41.279527+00:00
+                    Path: /api/v1/genres/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:41.282144+00:00
+                    Path: /api/v1/genres/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/genres/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:43.242281+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:43.911777+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:44.572786+00:00
+                    Path: /books/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:45.232837+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:45.235828+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:45.901643+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:45.904566+00:00
+                    Path: /books/1
+                    Method: GET
+                    User: testuser
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:46.568648+00:00
+                    Path: /books/1/borrow
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /books/1/borrow
+                    Status code: 302
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 13:12:46.569610+00:00
+                    Path: /accounts/login/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /accounts/login/
+                    Status code: 200
+                    Czas wykonania: 0.02 sekund
+        

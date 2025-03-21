@@ -324,3 +324,9 @@ http://127.0.0.1:8000/api/v1/authors/  - to mamy mieć browsable API a nie czyst
 ## Widoki klasowe oparte o APIView
 
 Na podstawie snippets/views.py oraz snippets/urls.py zrób zmiany w books/api_views.py oraz books/api_urls.py
+
+
+## Widoki generyczne i mixny
+
+Na podstawie snippets/views.py popraw books/api_views.py  tak by korzystać z mixinów
+

@@ -5,8 +5,6 @@ from .models import Book, Author, Genre, Borrowing, Review
 from django.utils import timezone
 from django.contrib.auth.models import User
 from .forms import GenreForm, AuthorForm, BookForm
-from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login
 from django.core.paginator import Paginator
 # Create your views here.
 

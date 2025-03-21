@@ -1,87 +1,95 @@
+from django.http import Http404
 
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 from .models import Genre, Author
 from .serializers import GenreSerializer, AuthorSerializer
 
-@api_view(["GET", "POST"])
-def genre_list(request, format=None):
 
-    if request.method == "GET":
+class GenreList(APIView):
+
+    def get(self, request, format=None):
         genres = Genre.objects.all()
         serializer = GenreSerializer(genres, many=True)
         return Response(serializer.data)
     
-    elif request.method == "POST":
+    def post(self, request, format=None):
         serializer = GenreSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=201)
-        return Response(serializer.errors, status=400)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
     
-@api_view(["GET", "PUT", "DELETE"])
-def genre_detail(request, pk, format=None):
+class GenreDetail(APIView):
 
-    genre = Genre.objects.get(pk=pk)
+    def get_object(self, pk):
 
-    if request.method == "GET":
+        try:
+            return Genre.objects.get(pk=pk)
+        except Genre.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        genre = self.get_object(pk)
         serializer = GenreSerializer(genre)
         return Response(serializer.data)
 
-    elif request.method == "PUT":
-        
+    def put(self, request, pk, format=None):
+        genre = self.get_object(pk)
         serializer = GenreSerializer(instance=genre, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        return Response(serializer.errors, status=400)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    elif request.method == "DELETE":
+    def delete(self, request, pk, format=None):
+        genre = self.get_object(pk)
         genre.delete()
-        return Response(status=204)
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-@api_view(["GET", "POST"])
-def author_list(request, format=None):
+class AuthorList(APIView):
 
-    if request.method == "GET":
+    def get(self, request, format=None):
         authors = Author.objects.all()
         serializer = AuthorSerializer(authors, many=True)
         return Response(serializer.data)
     
-    elif request.method == "POST":
+    def post(self, request, format=None):
         
         serializer = AuthorSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=201)
-        return Response(serializer.errors, status=400)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(["GET", "PUT", "PATCH", "DELETE"])
-def author_detail(request, pk,  format=None):
+class AuthorDetail(APIView):
 
-    try:
-        author = Author.objects.get(pk=pk)
-    except Author.DoesNotExist:
-        return Response(status=404)
+    def get_object(self, pk):
+        try:
+            return Author.objects.get(pk=pk)
+        except Author.DoesNotExist:
+            raise Http404
 
-    if request.method == "GET":
+    def get(self, request, pk, format=None):
+        author = self.get_object(pk)
         serializer = AuthorSerializer(author)
         return Response(serializer.data)
 
-    elif request.method == "PUT":
-        
+    def put(self, request, pk, format=None):
+        author = self.get_object(pk)
         serializer = AuthorSerializer(instance=author, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        return Response(serializer.errors, status=400)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    elif request.method == "PATCH":
+    def patch(self, request, pk, format=None):
+        author = self.get_object(pk)
         data = dict(request.data)
         
         data["first_name"] = data.get("first_name", author.first_name)
@@ -94,11 +102,9 @@ def author_detail(request, pk,  format=None):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        return Response(serializer.errors, status=400)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    elif request.method == "DELETE":
+    def delete(self, request, pk, format=None):
+        author = self.get_object(pk)
         author.delete()
-        return Response(status=204)
-
-    else:
-        return Response(status=405)
+        return Response(status=status.HTTP_204_NO_CONTENT)

@@ -22,16 +22,18 @@ class Genre(models.Model):
     
 
     def save(self, *args, **kwargs):
-        all_slugs = Genre.objects.values_list('slug', flat=True)
 
-        potential_slug = slugify(self.name)
+        if not self.slug:
+            all_slugs = Genre.objects.values_list('slug', flat=True)
 
-        i = 1
-        while potential_slug in all_slugs:
-            potential_slug = slugify_utils(f"{self.name}-{i}")
-            i += 1
+            potential_slug = slugify(self.name)
 
-        self.slug = potential_slug
+            i = 1
+            while potential_slug in all_slugs:
+                potential_slug = slugify_utils(f"{self.name}-{i}")
+                i += 1
+
+            self.slug = potential_slug
 
         
         super().save(*args, **kwargs)
@@ -51,7 +53,7 @@ class Book(models.Model):
     @property
     def is_available(self):
         # sprawdź czy istnieje wypożyczenie, które nie zostało zwrócone
-        return not self.borrowing_set.last().return_date is None if self.borrowing_set.last() else True
+        return self.borrowing_set.last().return_date is not None if self.borrowing_set.last() else True
     
 
     class Meta:

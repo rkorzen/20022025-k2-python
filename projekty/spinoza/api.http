@@ -18,7 +18,29 @@ Accept: text/html
 
 ###
 
-PUT http://localhost:8000/api/v1/authors/16/
+GET 
+
+###
+
+GET http://localhost:8000/api/v1/genres/1/
+
+
+###
+
+
+PUT http://localhost:8000/api/v1/genres/1/
+Content-Type: application/json
+
+{
+  "name": "Drama",
+  "slug": "drama",
+  "description": "dramatyczne historie"
+}
+
+
+###
+
+PUT http://localhost:8000/api/v1/genre/16/
 Content-Type: application/json
 
 {
