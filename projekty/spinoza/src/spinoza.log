@@ -1937,3 +1937,255 @@ Request zakończony:
                     Status code: 404
                     Czas wykonania: 0.01 sekund
         
+Nowy request:
+                    datetime: 2025-03-21 09:40:08.985964+00:00
+                    Path: /
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /
+                    Status code: 200
+                    Czas wykonania: 0.04 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:09.082451+00:00
+                    Path: /navbars.css
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /navbars.css
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:09.110330+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:18.940329+00:00
+                    Path: /api/v1/snippets
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:18.949943+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 500
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:51.015281+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 500
+                    Czas wykonania: 0.03 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:51.670198+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 500
+                    Czas wykonania: 0.02 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:56.562937+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: rkorzen
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 200
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:40:56.603516+00:00
+                    Path: /favicon.ico
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /favicon.ico
+                    Status code: 404
+                    Czas wykonania: 0.01 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:45:38.065962+00:00
+                    Path: /api/v1/snippets
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:45:46.818149+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:48:29.245394+00:00
+                    Path: /api/v1/snippets
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:50:05.667242+00:00
+                    Path: /api/v1/snippets
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:51:26.054439+00:00
+                    Path: /api/v1/snippets/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 403
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:52:55.503079+00:00
+                    Path: /api/v1/snippets/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 403
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:54:16.560381+00:00
+                    Path: /api/v1/snippets/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:54:27.749527+00:00
+                    Path: /api/v1/snippets/
+                    Method: POST
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 201
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:55:10.605250+00:00
+                    Path: /api/v1/snippets
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:55:16.564404+00:00
+                    Path: /api/v1/snippets
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:55:29.239446+00:00
+                    Path: /api/v1/snippets
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets
+                    Status code: 404
+                    Czas wykonania: 0.00 sekund
+        
+Nowy request:
+                    datetime: 2025-03-21 09:55:55.838523+00:00
+                    Path: /api/v1/snippets/
+                    Method: GET
+                    User: Anonymous
+                    IP: 127.0.0.1
+        
+Request zakończony:
+                    Path: /api/v1/snippets/
+                    Status code: 200
+                    Czas wykonania: 0.00 sekund
+        

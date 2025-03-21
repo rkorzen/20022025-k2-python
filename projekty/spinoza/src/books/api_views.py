@@ -1,0 +1,6 @@
+
+
+def genre_list(request): ...
+
+
+def author_list(request): ...
