@@ -290,3 +290,8 @@ response["X-Process-Time"] = czas wykonania
 2. dodaj go do settings.py
 3. sprawdz czy dziala w przegladarce np. 
 
+
+# Django Rest Freamework
+## Dodanie serializerow
+
+Dodaj serializery oparte o model dla modeli Author i Genre z aplikacji books
