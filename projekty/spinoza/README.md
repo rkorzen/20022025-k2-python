@@ -305,3 +305,18 @@ POST /api/v1/genres - dodanie nowego
 GET /api/v1/authors - lista autorow
 POST /api/v1/authors - dodanie nowego
 
+
+## browsable API
+
+zmien widoki tak by:
+- korzystały z dekoratora api_view (patrz w snippets/views.py)
+- korzystały z Response
+- użyj statusów - analogicznie jak w snippets
+- dodaj w widokach parametr format=None
+- w api_urls.py dodaj to co w snippets/urls.py
+
+efekt:
+
+jesli w przegladarce wejdziemy na
+
+http://127.0.0.1:8000/api/v1/authors/  - to mamy mieć browsable API a nie czysty JSON
