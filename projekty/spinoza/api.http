@@ -1,3 +1,36 @@
+GET http://localhost:8000/api/v1/authors/
+
+
+###
+
+POST http://localhost:8000/api/v1/authors/
+Content-Type: application/json
+
+{
+    "first_name": "Sigma",
+    "last_name": "Pi",
+    "date_of_birth": "1956-01-01"
+}
+
+
+###
+
+
+GET http://localhost:8000/api/v1/genres/
+
+
+###
+
+POST http://localhost:8000/api/v1/genres/
+Content-Type: application/json
+
+{
+    "name": "Sigma",
+    "description": "1956-01-01"
+}
+
+###
+
 POST http://localhost:8000/api/v1/snippets/ 
 Content-Type: application/json
 
