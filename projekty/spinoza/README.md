@@ -321,4 +321,6 @@ jesli w przegladarce wejdziemy na
 
 http://127.0.0.1:8000/api/v1/authors/  - to mamy mieć browsable API a nie czysty JSON
 
-Do 12:25
+## Widoki klasowe oparte o APIView
+
+Na podstawie snippets/views.py oraz snippets/urls.py zrób zmiany w books/api_views.py oraz books/api_urls.py
